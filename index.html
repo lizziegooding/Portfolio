@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Lizzie Gooding | portfolio</title>
+  <link href="screen.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="lightbox.css" />
+</head>
+
+<body>
+  <header>
+    <a href="index.html" id="title">Lizzie Gooding</a>
+  </header>
+
+  <div id="center">
+    <ul>
+      <li> <a href="mailto:gooding.lizzie@gmail.com">{ email }</a></li>
+      <li> <a href="images/Resume.pdf" target="_blank">{ resume }</a></li>
+      <li><a href="https://www.linkedin.com/in/sarahelizabethgooding">{ linkedin }</a>
+    </ul>
+  </div>
+
+  <div id="wrapper">
+	   <div id="content">
+		     <h2></h2>
+	    </div>
+
+  <div class="imageRow">
+  		<div class="single">
+  			<a href="https://api.tiles.mapbox.com/v4/pba.SF_affordability/page.html?access_token=pk.eyJ1IjoicGJhIiwiYSI6Im1LUlozWjQifQ.JUBNbCxrEo-60qaKM-Z6lA#10/45.5136/-122.6664" target="_blank"><img src="images/sf_web.png" alt="" /> </a>
+  		</div>
+  	</div>
+    <div class="imageRow">
+    		<div class="single">
+    			<a href="http://oregonp4p.org/our-research/foster-care-hotspots/" target="_blank"><img src="images/p4p.png" alt="" /> </a>
+    		</div>
+    	</div>
+  <div class="imageRow">
+  		<div class="single">
+  			<a href="work/Portland_Affordability.pdf" target="_blank"><img src="images/affordability_map.png" alt="" /> </a>
+  		</div>
+  	</div>
+	<div class="imageRow">
+  	  <div class="single">
+  			<a href="work/Geopolitics_Ukraine.pdf" target="_blank"><img src="images/ukraine.png" alt="" /> </a>
+  		</div>
+  	</div>
+  	<div class="imageRow">
+  	  <div class="single">
+  			<a href="work/TPP.pdf" target="_blank"><img src="images/trade_map.png" alt="" /> </a>
+  		</div>
+  	</div>
+
+	<div class="imageRow">
+  	  <div class="single">
+  			<a href="work/Newberg_Economic_Revitalization_Plan_Sample.pdf" target="_blank"><img src="images/newberg.png" alt="" /> </a>
+  		</div>
+  	</div>
+    <div class="imageRow">
+        <div class="single">
+          <a href="work/Hillsboro_Housing_Needs_Analysis_Sample.pdf" target="_blank"><img src="images/hillsboro.png" alt="" /> </a>
+        </div>
+      </div>
+</div>
+
+<script src="lightbox/js/jquery-1.7.2.min.js"></script>
+<script src="lightbox/js/jquery-ui-1.8.18.custom.min.js"></script>
+<script src="lightbox/js/jquery.smooth-scroll.min.js"></script>
+<script src="lightbox/js/lightbox.js"></script>
+
+<script>
+  jQuery(document).ready(function($) {
+      $('a').smoothScroll({
+        speed: 1000,
+        easing: 'easeInOutCubic'
+      });
+
+      $('.showOlderChanges').on('click', function(e){
+        $('.changelog .old').slideDown('slow');
+        $(this).fadeOut();
+        e.preventDefault();
+      })
+  });
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-2196019-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'lightbox/text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>

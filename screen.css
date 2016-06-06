@@ -1,0 +1,301 @@
+@charset "UTF-8";
+header {
+	text-align: center;
+	font-family: "Avenir", sans-serif;
+	color: gray;
+	padding: 10px 10px 10px 10px;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+body {
+	font-family: "Avenir", Helvetica, sans-serif;
+	max-width: 1245px;
+	color: #58595B;
+	background-image: url(images/struckaxiom.png);
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+#title{
+	text-align: center;
+	font-family: "Avenir", "Helvetica", "sans-serif";
+	color: #58595B;
+	font-size: 85px;
+	padding: 10px 10px 10px 80px;
+	text-decoration: none;
+}
+
+
+#center{
+	text-align: center;
+	line-height: 35px;
+}
+
+#center li{
+	display: inline;
+	text-decoration: none;
+	font-size: 25px;
+	list-style: none;
+	margin-top: 25px;
+	margin-bottom:25px;
+}
+
+#center li a{
+	text-decoration: none;
+	margin: 90px;
+	color: #58595B;
+}
+
+#wrapper ul {
+	list-style-type: none;
+	margin-top: -50px;
+	margin-left: 100px;
+}
+#wrapper ul li{
+	list-style-type: none;
+	display: inline;
+	padding: 0 10px 0 10px;
+}
+
+#wrapper ul li:hover{
+	opacity: 0.5;
+}
+
+
+#wrapper {
+	width: 100%;
+	height: auto;
+
+}
+
+#content {
+	width: 600px;
+	margin-left: 200px;
+
+
+}
+
+h2#writing {
+	margin: -50px 0 50px 380px;
+	letter-spacing: 5px;
+	font-weight: normal;
+}
+
+#content h2{
+	text-align: center;
+	margin-top: 50px;
+	letter-spacing: 5px;
+	padding-bottom: 55px;
+	font-weight: normal;
+}
+
+#content ul li{
+	float: left;
+
+}
+#content ul li h4{
+	margin-left: -50px;
+	font-weight: normal;
+}
+#content ul li p{
+	margin-left: 30px;
+	margin-top: -10px;
+	color: gray;
+}
+#content ul li a{
+	margin-left: 30px;
+	margin-top: -10px;
+	text-decoration: none;
+	color: gray;
+}
+#content ul li a:hover{
+	color: black;
+}
+#content ul li:hover{
+	opacity:1;
+}
+#bio {
+	width: 800px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: -40px;
+
+}
+
+#bio h2{
+	float: right;
+	font-weight: normal;
+	margin: 80px 280px 10px 0 ;
+}
+
+#bio p{
+
+	font-weight: normal;
+	margin-left: 300px;
+	width: 500px;
+}
+
+
+#bio a{
+
+	font-size: 1.2em;
+	text-decoration: none;
+	color: black;
+}
+#bio a:hover{
+
+	color: gray;
+}
+#bio img{
+	margin-left: 20px;
+	float: left;
+
+	box-shadow: 5px 5px 2px #9d9d9d;
+
+}
+
+nav {
+	height: 190px;
+	list-style-type: none;
+
+
+}
+
+nav ul {
+	margin-left: 270px;
+	margin-top: -25px;
+	padding: 0 0 0 0;
+	list-style: none;
+	position: relative;
+
+
+}
+	nav ul:after {
+		content: ""; clear: both; display: block;
+	}
+
+nav ul li {
+	padding-right: 100px;
+	font-weight: normal;
+	letter-spacing: 3px;
+	font-size: 1.4em;
+}
+	nav ul li:hover {
+
+	}
+		nav ul li:hover a {
+			color: gray;
+		}
+
+	nav ul li a {
+		padding: 5px 10px;
+		color: #58595B;
+		text-decoration: none;
+		font-weight: normal;
+		margin-top: -50px;
+		letter-spacing: 5px;
+		padding-bottom: 55px;
+	}
+
+nav ul ul {
+	display: none;
+	padding: 0;
+	margin: -5px 0 0 -15px;
+	position: absolute;
+	top: 100%;
+	float: left;
+	color: black;
+}
+
+	nav ul li:hover > ul {
+		display: block;
+		text-decoration: none;
+	}
+
+	nav ul ul li {
+		float: none;
+		color: #000;
+		position: relative;
+		font-size: 1em;
+	}
+		nav ul ul li a {
+			padding: 5px 40px;
+			color: #000;
+			font-size: 0.8em;
+		}
+			nav ul ul li a:hover {
+				color: #000;
+			}
+
+#current{
+
+	text-decoration: none;
+	font-weight: bold;
+	color: black;
+
+
+}
+
+
+
+.imageRow {
+	margin: -50px 0 0 150px;
+
+
+
+}
+.imageRow .single a img {
+	float: left;
+	display: inline;
+	box-shadow: 3px 3px 5px #b9b9b9;
+	border: thin solid #b9b9b9;
+	margin: 5px;
+
+}
+
+.imageRow .single a img:hover{
+	color: #ffffff;
+	opacity: 0.7;
+}
+
+
+
+footer{
+	height: 30px;
+	width: 90%;
+	margin-left: 3%;
+	margin-right: auto;
+	margin-top: 90px;
+	margin-bottom: 5px;
+	color: #000;
+	float: left;
+
+	opacity: 0.8;
+}
+
+footer ul{
+	margin: 0 0 0 150px;
+	padding: 2px 10px 10px 10px;
+}
+footer ul li{
+	display: inline;
+	margin: 0 50px 0 20px;
+	float: right;
+}
+
+footer ul li a{
+
+	text-decoration: none;
+	color: #000;
+}
+
+footer ul li a:hover{
+	color: gray;
+}
+
+footer p{
+	margin: -15px 0 0 700px;
+}
