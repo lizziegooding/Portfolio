@@ -1,0 +1,111 @@
+header {
+	text-align: center;
+	font-family: "Avenir", sans-serif;
+	color: gray;
+	/*padding: 10px 10px 10px 10px;*/
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+body {
+  margin: 0;
+}
+
+* {
+	font-family: "Avenir", Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+
+#title{
+	text-align: center;
+	font-family: "Avenir", "Helvetica", "sans-serif";
+	font-size: 400%;
+	text-decoration: none;
+  /*margin-top: 50%;*/
+}
+
+a, a:link, a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+#menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+#menu-icon {
+  height: 4rem;
+  margin: 2rem;
+}
+
+#menu ul {
+  display: none;
+  padding: 0;
+  list-style: none;
+  clear: both;
+}
+
+#menu:hover ul {
+  display: block;
+}
+
+section {
+  height: 100vh;
+  width: 100%;
+  padding: 0 7%;
+  display: table;
+  margin: 0;
+  max-width: none;
+}
+
+img {
+  max-width: 100%;
+  display: inline-block;
+}
+
+.even {
+  background-color: rgb(77,77,77);
+  color: white;
+}
+
+.odd {
+  background-color: white;
+  color: rgb(77,77,77);
+}
+
+.container {
+  display: table-cell;
+  vertical-align: middle;
+}
+/*For all media larger than 420px (media other than mobile)*/
+@media all and (min-width: 420px) {
+  h1 {
+    font-size: 500%;
+  }
+  .container{
+    max-width: 960px;
+  }
+  section{
+    max-width: 100%;
+  }
+}
+
+/* Grid FROM SKELETON, TEST
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box; }
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}

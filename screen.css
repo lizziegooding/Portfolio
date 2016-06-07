@@ -1,0 +1,28 @@
+header {
+	text-align: center;
+	font-family: "Avenir", sans-serif;
+	color: gray;
+	padding: 10px 10px 10px 10px;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+body {
+	font-family: "Avenir", Helvetica, sans-serif;
+	max-width: 1245px;
+	color: #58595B;
+	/*background-image: url(images/struckaxiom.png);*/
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+#title{
+	text-align: center;
+	font-family: "Avenir", "Helvetica", "sans-serif";
+	color: #58595B;
+	font-size: 85px;
+	padding: 10px 10px 10px 80px;
+	text-decoration: none;
+}
