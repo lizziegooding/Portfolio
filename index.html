@@ -10,8 +10,8 @@
 
   <!-- Connect CSS styles -->
   <link rel="stylesheet" type="text/css" href="css/base.css" />
-  <link rel="stylesheet" type="text/css" href="vendor/skeleton_css/normalize.css">
-  <link rel="stylesheet" type="text/css" href="vendor/skeleton_css/skeleton.css">
+  <!-- <link rel="stylesheet" type="text/css" href="vendor/skeleton_css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="vendor/skeleton_css/skeleton.css"> -->
 
 </head>
 
@@ -25,30 +25,31 @@
         <!-- temporary 'hamburger' menu icon, will eventually be replaced -->
         <img id="menu-icon" src="images/threelines.png">
         <ul>
-          <li><a href="#">{ welcome }</a></li>
-          <li><a href="#">{ about }</a></li>
-          <li><a href="#">{ skills &amp; experience }</a>
+          <li><a href="#welcome">{ welcome }</a></li>
+          <li><a href="#about">{ about }</a></li>
+          <li><a href="#skills">{ skills &amp;<br>experience }</a></li>
+          <li><a href="#work">{ work }</a></li>
         </ul>
     </nav>
   </header>
 
   <!-- Welcome section ------------------------------------------------->
 
-  <section>
+  <section class="even" id="welcome">
     <div class="container">
       <h1 id="title">Lizzie Gooding</h1>
-      <ul>
-        <li><a href="mailto:gooding.lizzie@gmail.com">{ email }</a></li>
-        <li><a href="images/Resume.pdf" target="_blank">{ resume }</a></li>
-        <li><a href="https://www.linkedin.com/in/sarahelizabethgooding">{ linkedin }</a>
-        <li><a href="https://github.com/lizziegooding">{ github }</a>
-      </ul>
+      <div class="row">
+        <div><a href="mailto:gooding.lizzie@gmail.com">{ email }</a></div>
+        <div><a href="images/Resume.pdf" target="_blank">{ resume }</a></div>
+        <div><a href="https://www.linkedin.com/in/sarahelizabethgooding">{ linkedin }</a></div>
+        <div><a href="https://github.com/lizziegooding">{ github }</a></div>
+      </div>
     </div>
   </section>
 
   <!-- About section ------------------------------------------------->
 
-  <section>
+  <section class="odd" id="about">
     <div class="container">
       Some things about me.
     </div>
@@ -56,7 +57,7 @@
 
   <!-- Skills/Experience section ------------------------------------------------->
 
-  <section>
+  <section class="even" id="skills">
     <div class="container">
       These are my skills.
     </div>
@@ -64,7 +65,7 @@
 
   <!-- Work section ------------------------------------------------->
 
-  <section>
+  <section class="odd" id="work">
     <div class="container">
       Take a look at my work.
       <div class="row">
