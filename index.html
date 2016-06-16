@@ -10,12 +10,23 @@
 
   <!-- Connect CSS styles -->
   <!-- <link rel="stylesheet" type="text/css" href="css/reset.css" /> -->
-  <link rel="stylesheet" type="text/css" href="css/base.css" />
+  <script src="https://use.typekit.net/uxn6xyu.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+
   <link rel="stylesheet" type="text/css" href="css/layout.css" />
   <link rel="stylesheet" type="text/css" href="css/module.css" />
   <link rel="stylesheet" type="text/css" href="css/state.css" />
-  <script src="https://use.typekit.net/uxn6xyu.js"></script>
-  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+  <link rel="stylesheet" type="text/css" href="css/base.css" />
+  <script id="work-template" type="text/x-handlebars-template">
+    <article data-category="{{category}}">
+        <a href="{{workUrl}}"><h1>{{title}}</h1></a>
+        <div>
+          Published on <time pubdate datetime="2000-01-01">{{publishedOn}}</time>.
+        </div>
+      <div class="article-body">{{{body}}}</div>
+    </article>
+  </script>
 
 </head>
 
@@ -62,24 +73,13 @@
   <!-- Skills/Experience section ------------------------------------------------->
 
   <section id="skills">
-    <div class="container">
-      These are my skills.
-    </div>
+    <div class="container">These are my skills.</div>
   </section>
 
   <!-- Work section ------------------------------------------------->
 
   <section id="work">
-    <article class="template" data-category="cat">
-      <header>
-        <h1>Title</h1>
-        <div class="byline">
-          By <address><a href="">Author Name</a></address>
-          published <time pubdate datetime="2000-01-01">Publish Time</time>
-        </div>
-      </header>
-      <div class="article-body"></div>
-    </article>
+    <div class="container"></div>
   </section>
 
   <!-- OLD Work section ------------------------------------------------->
@@ -125,6 +125,7 @@
 
 <!-- Add jQuery library -->
 <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
 <!-- Add local js files -->
 <script type="text/javascript" src="js/data.js"></script>
 <script type="text/javascript" src="js/work.js"></script>

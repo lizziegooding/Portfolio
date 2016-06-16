@@ -13,26 +13,29 @@ function Article (opts) {
 
 //Create a new method toHtml for all article objs which writes data from object into cloned html fragment
 Article.prototype.toHtml = function() {
+  console.log('prototype method called');
   //Clones works and all descendants within HTML
-  var $newArticle = $('article.template').clone();
+  // var $newArticle = $('article.template').clone();
 
   // Remove class template from our new clone
-  $newArticle.removeClass('template');
+  // $newArticle.removeClass('template');
 
   //Fill in: the work and url, the article title and body, and the publication date.
-  $newArticle.find('h1').text(this.title);
-  $newArticle.find('a').attr('href', this.workUrl);
-  $newArticle.find('section.article-body').html(this.body);
+  // $newArticle.find('h1').text(this.title);
+  // $newArticle.find('a').attr('href', this.workUrl);
+  // $newArticle.find('section.article-body').html(this.body);
   //Include the publication date as a 'title' attribute to show on hover:
-  $newArticle.find('time[pubdate]').attr('title', this.publishedOn);
+  // $newArticle.find('time[pubdate]').attr('title', this.publishedOn);
 
   // Display the date as a relative number of "days ago":
-  $newArticle.find('time').text('about ' + parseInt((new Date() - new Date(this.publishedOn)) / 60 / 60 / 24 / 1000) + ' days ago');
-
+  this.daysAgo = parseInt((new Date() - new Date(this.publishedOn)) / 60 / 60 / 24 / 1000);
+  this.publishStatus = this.publishedOn ? 'published ' + this.daysAgo + ' days ago' : '(draft)';
+  var input = $('#work-template').html();
+  var template = Handlebars.compile(input);
   //Append horizontal line to end
-  $newArticle.append('<hr>');
+  // $newArticle
   //Return our modified cloned DOM fragment
-  return $newArticle;
+  return template(this);
 };
 
 //Sort array based on publication date
@@ -45,5 +48,5 @@ rawData.forEach(function(ele) {
 });
 
 work.forEach(function(a){
-  $('#work').append(a.toHtml());
+  $('#work div.container').append(a.toHtml());
 });
