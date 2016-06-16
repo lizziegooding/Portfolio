@@ -7,10 +7,12 @@ workView.changeNav = function(){
   $('nav ul li').on('click', function(){
     //Hide all sections
     $('section').hide();
+    //Fade in clicked section where data-content attribute matches section id
     $('#' + $(this).attr('data-content')).fadeIn();
   });
 };
 
-$(document).ready(function() {
+//Call the function once te page has loaded
+$(function() {
   workView.changeNav();
 });
