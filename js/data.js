@@ -1,6 +1,6 @@
 var rawData = [
   {
-    title:       'Single Family Affordability, 2014',
+    title: 'Single Family Affordability, 2014',
     category:    'web map',
     workUrl:   'https://api.tiles.mapbox.com/v4/pba.SF_affordability/page.html?access_token=pk.eyJ1IjoicGJhIiwiYSI6Im1LUlozWjQifQ.JUBNbCxrEo-60qaKM-Z6lA#10/45.5136/-122.6664',
     publishedOn: '2015-03-05',

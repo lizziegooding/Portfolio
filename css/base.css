@@ -1,61 +1,17 @@
-header {
+* {
+	font-family: "adelle", "Avenir", Helvetica, sans-serif;
+  box-sizing: border-box;
 	text-align: center;
-	font-family: "Avenir", sans-serif;
-	color: gray;
-	/*padding: 10px 10px 10px 10px;*/
-	margin-left: auto;
-	margin-right: auto;
-
 }
 
 body {
   margin: 0;
 }
 
-* {
-	font-family: "Avenir", Helvetica, sans-serif;
-  box-sizing: border-box;
-}
-
-
-#title {
-	text-align: center;
-	font-family: "Avenir", "Helvetica", "sans-serif";
-	font-size: 400%;
-	text-decoration: none;
-  /*margin-top: 50%;*/
-}
-
-a, a:link, a:active {
-  text-decoration: none;
-  color: inherit;
-}
-
-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-	z-index: 100;
-}
-
-nav img {
-  height: 4rem;
-  margin: 2rem;
-}
-
-nav ul {
-  /*display: none;*/
-  padding: 0;
-  list-style: none;
-  clear: both;
-}
-
-/*nav:hover ul {
-  display: block;
-}*/
-
-nav ul li {
-	z-index: 1000;
+header {
+	color: gray;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 section {
@@ -65,11 +21,6 @@ section {
   display: table;
   margin: 0;
   max-width: none;
-}
-
-img {
-  max-width: 100%;
-  display: inline-block;
 }
 
 section:nth-child(even) {
@@ -82,34 +33,27 @@ section:nth-child(odd) {
   color: rgb(77,77,77);
 }
 
-/*For all media larger than 420px (media other than mobile)*/
-@media all and (min-width: 420px) {
-  h1 {
-    font-size: 500%;
-  }
-  .container{
-    max-width: 960px;
-  }
-  section{
-    max-width: 100%;
-  }
+h1, h2, h3 {
+	font-family: "proxima-nova", "Avenir", Helvetica, "sans-serif";
 }
 
-/* Grid FROM SKELETON, TEST
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-.container {
-  position: relative;
-  width: 100%;
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 0 20px;
-  box-sizing: border-box;
-	display: table-cell;
-	vertical-align: middle;
+h1 {
+	font-size: 3em;
 }
 
-.row {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+a, a:link, a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: inline-block;
+}
+
+#title {
+	text-align: center;
+	font-size: 400%;
+	text-decoration: none;
+  /*margin-top: 50%;*/
 }

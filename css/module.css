@@ -1,0 +1,26 @@
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+	z-index: 100;
+}
+
+nav img {
+  height: 4rem;
+  margin: 2rem;
+}
+
+nav ul {
+  /*display: none;*/
+  padding: 0;
+  list-style: none;
+  clear: both;
+}
+
+/*nav:hover ul {
+  display: block;
+}*/
+
+nav ul li {
+	z-index: 1000;
+}
