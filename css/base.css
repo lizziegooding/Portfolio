@@ -1,29 +1,32 @@
+* {
+	font-family: "adelle", "Avenir", Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
 header {
 	text-align: center;
-	font-family: "Avenir", sans-serif;
 	color: gray;
-	/*padding: 10px 10px 10px 10px;*/
 	margin-left: auto;
 	margin-right: auto;
-
 }
 
 body {
   margin: 0;
 }
 
-* {
-	font-family: "Avenir", Helvetica, sans-serif;
-  box-sizing: border-box;
-}
-
-
 #title {
 	text-align: center;
-	font-family: "Avenir", "Helvetica", "sans-serif";
 	font-size: 400%;
 	text-decoration: none;
   /*margin-top: 50%;*/
+}
+
+h1, h2, h3 {
+	font-family: "proxima-nova", "Avenir", Helvetica, "sans-serif";
+}
+
+h1 {
+	font-size: 3em;
 }
 
 a, a:link, a:active {
@@ -84,8 +87,17 @@ section:nth-child(odd) {
 
 /*For all media larger than 420px (media other than mobile)*/
 @media all and (min-width: 420px) {
-  h1 {
-    font-size: 500%;
+	#title {
+		font-size: 500%;
+	}
+	h1 {
+    font-size: 400%;
+  }
+	h2 {
+    font-size: 320%;
+  }
+	h3 {
+    font-size: 240%;
   }
   .container{
     max-width: 960px;
