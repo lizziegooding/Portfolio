@@ -18,7 +18,7 @@ body {
 }
 
 
-#title{
+#title {
 	text-align: center;
 	font-family: "Avenir", "Helvetica", "sans-serif";
 	font-size: 400%;
@@ -31,25 +31,25 @@ a, a:link, a:active {
   color: inherit;
 }
 
-#menu {
+nav {
   position: fixed;
   top: 0;
   left: 0;
 }
 
-#menu-icon {
+nav img {
   height: 4rem;
   margin: 2rem;
 }
 
-#menu ul {
+nav ul {
   display: none;
   padding: 0;
   list-style: none;
   clear: both;
 }
 
-#menu:hover ul {
+nav:hover ul {
   display: block;
 }
 
@@ -67,20 +67,16 @@ img {
   display: inline-block;
 }
 
-.even {
+section:nth-child(even) {
   background-color: rgb(77,77,77);
   color: white;
 }
 
-.odd {
+section:nth-child(odd) {
   background-color: white;
   color: rgb(77,77,77);
 }
 
-.container {
-  display: table-cell;
-  vertical-align: middle;
-}
 /*For all media larger than 420px (media other than mobile)*/
 @media all and (min-width: 420px) {
   h1 {
@@ -102,7 +98,10 @@ img {
   max-width: 960px;
   margin: 0 auto;
   padding: 0 20px;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+	display: table-cell;
+	vertical-align: middle;
+}
 
 .row {
   display: flex;
