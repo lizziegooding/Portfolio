@@ -2,7 +2,7 @@
 var workView = {};
 
 workView.changeNav = function(){
-  console.log('changedNav');
+  console.log('Running changedNav');
   //Add event listener to the nav bar, 'click'
   $('nav ul li').on('click', function(){
     //Hide all sections
@@ -12,7 +12,13 @@ workView.changeNav = function(){
   });
 };
 
-//Call the function once te page has loaded
-$(function() {
+workView.initIndexPage = function(){
+  console.log('Running initIndexPage');
+  Work.all.forEach(function(a){
+    $('#work div.container').append(a.toHtml());
+  });
+
   workView.changeNav();
-});
+};
+
+//Call the function once te page has loaded
