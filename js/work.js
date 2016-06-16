@@ -1,5 +1,5 @@
 //Declare new array works to hold work objects
-var works = [];
+var work = [];
 
 //Create a constructor function 'Article'
 function Article (opts) {
@@ -41,9 +41,9 @@ rawData.sort(function(a,b) {
 });
 
 rawData.forEach(function(ele) {
-  works.push(new Article(ele));
+  work.push(new Article(ele));
 });
 
-works.forEach(function(a){
-  $('#works').append(a.toHtml());
+work.forEach(function(a){
+  $('#work').append(a.toHtml());
 });

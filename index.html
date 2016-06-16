@@ -26,10 +26,10 @@
         <!-- temporary 'hamburger' menu icon, will eventually be replaced -->
         <img src="images/threelines.png">
         <ul>
-          <li><a href="#welcome">{ welcome }</a></li>
-          <li><a href="#about">{ about }</a></li>
-          <li><a href="#skills">{ skills &amp;<br>experience }</a></li>
-          <li><a href="#work">{ work }</a></li>
+          <li data-content="welcome">{ welcome }</li>
+          <li data-content="about">{ about }</li>
+          <li data-content="skills">{ skills &amp;<br>experience }</li>
+          <li data-content="work">{ work }</li>
         </ul>
     </nav>
   </header>
@@ -66,7 +66,7 @@
 
   <!-- Work section ------------------------------------------------->
 
-  <section id="works">
+  <section id="work">
     <article class="template" data-category="cat">
       <header>
         <h1>Title</h1>
@@ -123,8 +123,9 @@
 <!-- Add jQuery library -->
 <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
 <!-- Add local js files -->
-<script type="text/javascript" src="js/model.js"></script>
-<script type="text/javascript" src="js/view.js"></script>
+<script type="text/javascript" src="js/data.js"></script>
+<script type="text/javascript" src="js/work.js"></script>
+<script type="text/javascript" src="js/workView.js"></script>
 
 </body>
 </html>
