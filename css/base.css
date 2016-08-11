@@ -46,6 +46,12 @@ a, a:link, a:active {
   color: inherit;
 }
 
+p {
+	text-align: left;
+	max-width: 70%;
+	line-height: 200%;
+}
+
 img {
   max-width: 100%;
   display: inline-block;
@@ -55,5 +61,4 @@ img {
 	text-align: center;
 	font-size: 400%;
 	text-decoration: none;
-  /*margin-top: 50%;*/
 }

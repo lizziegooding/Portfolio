@@ -1,23 +1,24 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html>
 
 <head>
   <title>Lizzie Gooding | Portfolio</title>
-  <!-- <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> -->
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
   <!-- Set viewport equal to device width -->
   <meta name="viewport" content="width=device-width initial-scale=1">
 
-  <!-- Connect CSS styles -->
-  <!-- <link rel="stylesheet" type="text/css" href="css/reset.css" /> -->
+  <!-- Connect to Adobe Typekit fonts -->
   <script src="https://use.typekit.net/uxn6xyu.js"></script>
   <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
-
+  <!-- Connect CSS styles -->
   <link rel="stylesheet" type="text/css" href="css/layout.css" />
   <link rel="stylesheet" type="text/css" href="css/module.css" />
   <link rel="stylesheet" type="text/css" href="css/state.css" />
   <link rel="stylesheet" type="text/css" href="css/base.css" />
+
+  <!-- Create handlebars template for each featured work -->
   <script id="work-template" type="text/x-handlebars-template">
     <article data-category="{{category}}">
         <a href="{{workUrl}}"><h1>{{title}}</h1></a>
@@ -43,7 +44,11 @@
           <li data-content="welcome">{ welcome }</li>
           <li data-content="about">{ about }</li>
           <li data-content="skills">{ skills &amp;<br>experience }</li>
-          <li data-content="work">{ work }</li>
+          <li data-content="work">{ work }
+            <li>- code</li>
+            <li>- design</li>
+            <li>- maps</li>
+        </li>
         </ul>
     </nav>
   </header>
@@ -66,7 +71,9 @@
 
   <section id="about">
     <div class="container">
-      Some things about me.
+      <p>
+      I’m a spatially-minded developer seeking a career at the intersection of data visualization and programming. I am both a generalist, highly skilled in writing, speaking, and visualizing data, and a specialist with deep expertise in spatial problem solving and cartography. My qualitative skills complement and enhance a strong quantitative background that includes training in computer science, math, and spatial analysis. In the future, I am looking to combine data analysis, graphic design, and effective storytelling to create striking digital products for the media industry.
+    </p>
     </div>
   </section>
 
@@ -123,13 +130,18 @@
   </div>
 </section> -->
 
-<!-- Add jQuery library -->
+<!-- Add jQuery & Handlebars libraries -->
 <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
+
 <!-- Add local js files -->
 <script type="text/javascript" src="js/work.js"></script>
 <script type="text/javascript" src="js/workView.js"></script>
-<script>console.log("Calling fetchAll");
-  Work.fetchAll();</script>
+
+<script>
+  console.log("Calling fetchAll");
+  Work.fetchAll();
+</script>
+
 </body>
 </html>
