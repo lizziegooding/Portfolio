@@ -48,8 +48,15 @@ a, a:link, a:active {
 
 p {
 	text-align: left;
-	max-width: 70%;
+	max-width: 100%;
 	line-height: 200%;
+}
+#about-h1 {
+	text-align: left;
+	max-width: 100%;
+	margin: 0px;
+	/*line-height: 200%;*/
+
 }
 
 img {
@@ -61,4 +68,13 @@ img {
 	text-align: center;
 	font-size: 400%;
 	text-decoration: none;
+}
+
+#about-img {
+	height: 275px;
+	width: 400px;
+	max-width: 35%;
+	background-image: url("../images/about.svg");
+	backround-size: cover;
+	background-repeat: no-repeat;
 }

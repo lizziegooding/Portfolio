@@ -15,4 +15,13 @@
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  align-items: center;
+}
+
+.column {
+  flex-direction: column;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 55%;
 }
