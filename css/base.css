@@ -1,7 +1,7 @@
 * {
 	font-family: "adelle", "Avenir", Helvetica, sans-serif;
   box-sizing: border-box;
-	text-align: center;
+	text-align: left;
 }
 
 body {
@@ -46,6 +46,19 @@ a, a:link, a:active {
   color: inherit;
 }
 
+p {
+	text-align: left;
+	/*max-width: 100%;*/
+	line-height: 200%;
+}
+#about-h1 {
+	text-align: left;
+	/*max-width: 100%;*/
+	margin: 0px;
+	/*line-height: 200%;*/
+
+}
+
 img {
   max-width: 100%;
   display: inline-block;
@@ -55,5 +68,22 @@ img {
 	text-align: center;
 	font-size: 400%;
 	text-decoration: none;
-  /*margin-top: 50%;*/
+}
+
+#about-img {
+	height: 275px;
+	width: 400px;
+	max-width: 35%;
+	background-image: url("../images/about.svg");
+	/*background-size: cover;*/
+	background-repeat: no-repeat;
+}
+
+.circle {
+	height: 15px;
+	width: 15px;
+	background-color: white;
+	border-radius: 15px;
+	margin: 5px;
+	display: inline-block;
 }
