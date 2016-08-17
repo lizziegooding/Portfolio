@@ -71,9 +71,10 @@ img {
 }
 
 #about-img {
-	height: 275px;
-	width: 400px;
-	max-width: 35%;
+	height: 200px;
+	width: 320px;
+	/*max-width: 35%;*/
+	min-width: 35%;
 	background-image: url("../images/about.svg");
 	/*background-size: cover;*/
 	background-repeat: no-repeat;

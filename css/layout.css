@@ -22,6 +22,6 @@
   flex-direction: column;
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
   max-width: 55%;
 }
