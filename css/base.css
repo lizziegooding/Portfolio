@@ -83,7 +83,7 @@ img {
 	background-repeat: no-repeat;
 }
 
-.circle {
+.circle-container > div {
 	height: 15px;
 	width: 15px;
 	background-color: white;
@@ -92,7 +92,12 @@ img {
 	display: inline-block;
 }
 
-.circle-container {
+.sub-col > div {
+	display: inline-block;
+	height: 28px;
+}
+
+/*.circle-container {
 	height: 30px;
 	width: 140px;
-}
+}*/
