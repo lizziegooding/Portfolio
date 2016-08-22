@@ -1,10 +1,34 @@
 [
   {
+    "title": "Trends in Portland Metro Homeownership Affordability",
+    "category":    "web",
+    "workUrl":   "http://econw.github.io/PHC-map/index.html",
+    "imgUrl": "images/phc.png",
+    "publishedOn": "2016-06-01",
+    "body":        "<p>For the Portland Business Alliance (PBA), while working at ECONorthwest</p>"
+  },
+  {
+    "title": "Atlas of the Caucasus",
+    "category":    "web",
+    "workUrl":   "http://mjfreem1.github.io/Caucasus-Map-Project/index.html",
+    "imgUrl": "images/atlas.png",
+    "publishedOn": "2016-06-20",
+    "body":        "<p>For the Portland Business Alliance (PBA), while working at ECONorthwest</p>"
+  },
+  {
+    "title": "US Housing Affordability",
+    "category":    "web",
+    "workUrl":   "http://atlas-housing-2.herokuapp.com/",
+    "imgUrl": "images/US-afford.png",
+    "publishedOn": "2016-07-01",
+    "body":        "<p>For the Portland Business Alliance (PBA), while working at ECONorthwest</p>"
+  },
+  {
     "title": "Single Family Affordability, 2014",
     "category":    "web",
     "workUrl":   "https://api.tiles.mapbox.com/v4/pba.SF_affordability/page.html?access_token=pk.eyJ1IjoicGJhIiwiYSI6Im1LUlozWjQifQ.JUBNbCxrEo-60qaKM-Z6lA#10/45.5136/-122.6664",
     "imgUrl": "images/sf_web.png",
-    "publishedOn": "2015-03-05",
+    "publishedOn": "2015-03-04",
     "body":        "<p>For the Portland Business Alliance (PBA), while working at ECONorthwest</p>"
   },
   {
@@ -14,6 +38,22 @@
     "imgUrl": "images/p4p.png",
     "publishedOn": "2015-05-04",
     "body":        "<p>For Oregon Health and Science University (OHSU), while working at ECONorthwest</p>"
+  },
+  {
+    "title":       "The State of Gun Control after Orlando",
+    "category":    "print",
+    "workUrl":   "images/gun-control.pdf",
+    "imgUrl": "images/gun-control.png",
+    "publishedOn": "2016-07-01",
+    "body":        "<p>For the Portland Housing Center (PHC), while working at ECONorthwest</p>"
+  },
+  {
+    "title":       "Ethno-Linguistic groups of the Caucasus",
+    "category":    "print",
+    "workUrl":   "images/caucasus.jpg",
+    "imgUrl": "images/caucasus.jpg",
+    "publishedOn": "2016-06-01",
+    "body":        "<p>For the Portland Housing Center (PHC), while working at ECONorthwest</p>"
   },
   {
     "title":       "Single Family Affordability, 2015",
