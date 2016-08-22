@@ -6,6 +6,7 @@
     this.title = opts.title;
     this.category = opts.category;
     this.workUrl = opts.workUrl;
+    this.imgUrl = opts.imgUrl;
     this.publishedOn = opts.publishedOn;
     this.body = opts.body;
   }
