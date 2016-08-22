@@ -16,7 +16,7 @@
   };
 
   workView.initIndexPage = function(){
-    console.log('Running initIndexPage');
+    console.log('Running initIndexPage work');
     Work.all.forEach(function(a){
       $('#work div.container').append(a.toHtml());
     });
