@@ -18,10 +18,27 @@
   align-items: center;
 }
 
+.col {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items:baseline;
+  /*max-width: 50%;*/
+}
+
+.sub-col {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  /*max-width: 50%;*/
+}
+
 .column {
   flex-direction: column;
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
   max-width: 55%;
+  /*margin-left: 4%;*/
 }

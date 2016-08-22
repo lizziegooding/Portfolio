@@ -2,6 +2,9 @@
 	font-family: "adelle", "Avenir", Helvetica, sans-serif;
   box-sizing: border-box;
 	text-align: left;
+	border-width: thin;
+	border-color: black;
+	border-style: solid;
 }
 
 body {
@@ -51,6 +54,11 @@ p {
 	/*max-width: 100%;*/
 	line-height: 200%;
 }
+
+li {
+	list-style: none;
+	height: 22px;
+}
 #about-h1 {
 	text-align: left;
 	/*max-width: 100%;*/
@@ -71,19 +79,39 @@ img {
 }
 
 #about-img {
-	height: 275px;
-	width: 400px;
-	max-width: 35%;
+	height: 200px;
+	width: 320px;
+	/*max-width: 35%;*/
+	min-width: 35%;
 	background-image: url("../images/about.svg");
 	/*background-size: cover;*/
 	background-repeat: no-repeat;
 }
 
-.circle {
+.white {
 	height: 15px;
 	width: 15px;
 	background-color: white;
 	border-radius: 15px;
-	margin: 5px;
+	margin: 3px;
 	display: inline-block;
 }
+.black {
+	height: 15px;
+	width: 15px;
+	background-color: black;
+	border-radius: 15px;
+	margin: 3px;
+	display: inline-block;
+}
+
+.sub-col > div {
+	display: inline-block;
+	height: 22.73px;
+	width: 140px;
+}
+
+/*.circle-container {
+	height: 30px;
+	width: 140px;
+}*/

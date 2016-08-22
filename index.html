@@ -13,12 +13,25 @@
   <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
   <!-- Connect CSS styles -->
-  <link rel="stylesheet" type="text/css" href="vendor/skeleton_css/skeleton.css" />
+  <!-- <link rel="stylesheet" type="text/css" href="vendor/skeleton_css/skeleton.css" /> -->
 
   <link rel="stylesheet" type="text/css" href="css/layout.css" />
   <link rel="stylesheet" type="text/css" href="css/module.css" />
   <link rel="stylesheet" type="text/css" href="css/state.css" />
   <link rel="stylesheet" type="text/css" href="css/base.css" />
+
+<script id="skills-template" type="text/x-handlebars-template">
+  <li class="sub-col">
+    <div>{{skill}}</div>
+    <div>
+      <div class="{{level1}}"></div>
+      <div class="{{level2}}"></div>
+      <div class="{{level3}}"></div>
+      <div class="{{level4}}"></div>
+      <div class="{{level5}}"></div>
+    </div>
+  </li>
+</script>
 
   <!-- Create handlebars template for each featured work -->
   <script id="work-template" type="text/x-handlebars-template">
@@ -90,23 +103,37 @@
   <section id="skills">
     <div class="container">
       <h1 id="about-h1">Skills</h1>
-      <div class="row">
-        <div class="two columns">ArcGIS</div>
-        <!-- <div class="row"> -->
-          <div class="four columns">
-            <!-- <div class="row"> -->
-
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
-          <!-- </div>
-        </div> -->
-        </div>
+      <div class="col">
+        <div>
+          <ul id="tech"><h3>Technical</h3>
+          <!-- <li class="sub-col">
+            <div>ArcGIS</div>
+            <div class="circle-container">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </li> -->
+      </ul>
       </div>
 
-      <div class="row">
+      <ul><h3>Qualitative</h3>
+        <li>Project Management</li>
+        <li>Research</li>
+        <li>Data Analysis</li>
+        <li>Geographic Visualization</li>
+        <li>Graphic Design</li>
+        <li>Oral and Written Communication</li>
+        <li>Problem Solving</li>
+        <li>Teaching</li>
+        <li>Consulting</li>
+        <li>Spanish</li>
+      </ul>
+      </div>
+
+      <!-- <div class="row">
         <div class="two columns">QGIS</div>
         <div class="four columns">
           <div class="circle"></div>
@@ -214,7 +241,7 @@
           <div class="circle"></div>
           <div class="circle"></div>
         </div>
-      </div>
+      </div>-->
 
     </div>
   </section>
@@ -271,12 +298,16 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
 
 <!-- Add local js files -->
+<script type="text/javascript" src="js/skills.js"></script>
+<script type="text/javascript" src="js/skillsView.js"></script>
+
 <script type="text/javascript" src="js/work.js"></script>
 <script type="text/javascript" src="js/workView.js"></script>
 
 <script>
   console.log("Calling fetchAll");
   Work.fetchAll();
+  Skills.fetchAll();
 </script>
 
 </body>

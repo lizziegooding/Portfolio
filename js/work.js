@@ -1,7 +1,5 @@
-//Wrap the entire contents of this file in an IIFE. Pass in to the IIFE a module, upon which objects can be attached for later access.
+//Funtions wrapped in an IIFE which is passed an argument of module, upon which objects can be attached for later access.
 (function(module) {
-// Instead of a global `articles = []` array, track list of all articles directly on Work, the constructor function. Note: ".all" is NOT on the prototype. In JS, functions are objects; you can add properties to any function, at any time. In this app, we have an array of Work objects that we want to build; that array does not belong in Work.prototype since that array is "larger" than any single Work.
-
 //Create a constructor function 'Work'
   function Work (opts) {
     // Save all properties of `opts` into `this`.
@@ -11,9 +9,6 @@
     this.publishedOn = opts.publishedOn;
     this.body = opts.body;
   }
-
-  //Declare new array works to hold work objects
-  // Work.all = [];
 
   //Create a new method toHtml for all article objs which writes data from object into cloned html fragment
   Work.prototype.toHtml = function() {
@@ -46,7 +41,7 @@
   Work.fetchAll = function() {
     if (localStorage.dataJSON) {
       // When rawData is already in localStorage, we can load it by calling the .loadAll function, and then render the index page (using the proper method on the workView object).
-      console.log('Retrieved from localStorage: ', JSON.parse(localStorage.dataJSON));
+      console.log('Retrieved work from localStorage: ', JSON.parse(localStorage.dataJSON));
       //DONE: What do we pass in here to the .loadAll function?
       Work.loadAll(JSON.parse(localStorage.dataJSON));
       //DONE: Change this fake method call to the correct one that will render the index page.
@@ -56,12 +51,12 @@
       // 1. Retrieve the JSON file from the server with AJAX (which jQuery method is best for this?),
       $.getJSON('myWork.json')
         .done(parseData)
-        .fail(function() { console.log('Problem with data!'); })
-        .always(function() { console.log('Try to get JSON data from server.');
+        .fail(function() { console.log('Problem with work data!'); })
+        .always(function() { console.log('Try to get JSON work data from server.');
         });
 
       function parseData(data){
-        console.log('From AJAX: ', data);
+        console.log('From AJAX, work: ', data);
         // 2. Store the resulting JSON data with the .loadAll method,
         Work.loadAll(data);
         // 3. Cache the data in localStorage so next time we won't enter this "else" block (avoids hitting the server),
