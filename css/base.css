@@ -83,10 +83,18 @@ img {
 	background-repeat: no-repeat;
 }
 
-.circle-container > div {
+.white {
 	height: 15px;
 	width: 15px;
 	background-color: white;
+	border-radius: 15px;
+	margin: 5px;
+	display: inline-block;
+}
+.black {
+	height: 15px;
+	width: 15px;
+	background-color: black;
 	border-radius: 15px;
 	margin: 5px;
 	display: inline-block;

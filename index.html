@@ -20,6 +20,19 @@
   <link rel="stylesheet" type="text/css" href="css/state.css" />
   <link rel="stylesheet" type="text/css" href="css/base.css" />
 
+<script id="skills-template" type="text/x-handlebars-template">
+  <li class="sub-col">
+    <div>{{skill}}</div>
+    <div>
+      <div class="{{level}}"></div>
+      <div class="{{level}}"></div>
+      <div class="{{level}}"></div>
+      <div class="{{level}}"></div>
+      <div class="{{level}}"></div>
+    </div>
+  </li>
+</script>
+
   <!-- Create handlebars template for each featured work -->
   <script id="work-template" type="text/x-handlebars-template">
     <article data-category="{{category}}">
@@ -92,8 +105,8 @@
       <h1 id="about-h1">Skills</h1>
       <div class="col">
         <div>
-          <h3>Technical</h3>
-          <div class="sub-col">
+          <ul><h3>Technical</h3>
+          <!-- <li class="sub-col">
             <div>ArcGIS</div>
             <div class="circle-container">
               <div></div>
@@ -102,8 +115,8 @@
               <div></div>
               <div></div>
             </div>
-        </div>
-
+          </li> -->
+      </ul>
       </div>
 
       <ul><h3>Qualitative</h3>
