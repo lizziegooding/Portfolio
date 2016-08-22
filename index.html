@@ -24,11 +24,11 @@
   <li class="sub-col">
     <div>{{skill}}</div>
     <div>
-      <div class="{{level}}"></div>
-      <div class="{{level}}"></div>
-      <div class="{{level}}"></div>
-      <div class="{{level}}"></div>
-      <div class="{{level}}"></div>
+      <div class="{{level1}}"></div>
+      <div class="{{level2}}"></div>
+      <div class="{{level3}}"></div>
+      <div class="{{level4}}"></div>
+      <div class="{{level5}}"></div>
     </div>
   </li>
 </script>
@@ -105,7 +105,7 @@
       <h1 id="about-h1">Skills</h1>
       <div class="col">
         <div>
-          <ul><h3>Technical</h3>
+          <ul id="tech"><h3>Technical</h3>
           <!-- <li class="sub-col">
             <div>ArcGIS</div>
             <div class="circle-container">
@@ -298,12 +298,16 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
 
 <!-- Add local js files -->
+<script type="text/javascript" src="js/skills.js"></script>
+<script type="text/javascript" src="js/skillsView.js"></script>
+
 <script type="text/javascript" src="js/work.js"></script>
 <script type="text/javascript" src="js/workView.js"></script>
 
 <script>
   console.log("Calling fetchAll");
   Work.fetchAll();
+  Skills.fetchAll();
 </script>
 
 </body>

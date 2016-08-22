@@ -54,6 +54,11 @@ p {
 	/*max-width: 100%;*/
 	line-height: 200%;
 }
+
+li {
+	list-style: none;
+	height: 22px;
+}
 #about-h1 {
 	text-align: left;
 	/*max-width: 100%;*/
@@ -88,7 +93,7 @@ img {
 	width: 15px;
 	background-color: white;
 	border-radius: 15px;
-	margin: 5px;
+	margin: 3px;
 	display: inline-block;
 }
 .black {
@@ -96,13 +101,14 @@ img {
 	width: 15px;
 	background-color: black;
 	border-radius: 15px;
-	margin: 5px;
+	margin: 3px;
 	display: inline-block;
 }
 
 .sub-col > div {
 	display: inline-block;
-	height: 28px;
+	height: 22.73px;
+	width: 140px;
 }
 
 /*.circle-container {
