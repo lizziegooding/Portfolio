@@ -35,7 +35,7 @@
 
   <!-- Create handlebars template for each featured work -->
   <script id="work-template" type="text/x-handlebars-template">
-    <article class="row">
+    <article class="row" category="{{category}}">
       <div class="four columns">
         <a href="{{workUrl}}" target="_blank"><img src="{{imgUrl}}" alt="" /></a>
       </div>
@@ -129,59 +129,12 @@
 
   <!-- Work section ------------------------------------------------->
 
-  <!-- <section id="work">
-    <div class="container"></div>
-  </section> -->
-
-  <!-- OLD Work section ------------------------------------------------->
-
   <section  id="work">
     <div class="container">
       <h1>Work</h1>
-      <h3>Web</h3>
-      <div class="row">
-    		<div class="four columns">
-    			<a href="https://api.tiles.mapbox.com/v4/pba.SF_affordability/page.html?access_token=pk.eyJ1IjoicGJhIiwiYSI6Im1LUlozWjQifQ.JUBNbCxrEo-60qaKM-Z6lA#10/45.5136/-122.6664" target="_blank"><img src="images/sf_web.png" alt="" /></a>
-        </div>
-        <div class="eight columns">
-          <p>A brief description of the project or work featured. A brief description of the project or work featured. A brief description of the project or work featured. A brief description of the project or work featured. A brief description of the project or work featured</p>
-    		</div>
-      </div>
-
-      <div class="row">
-    		<div class="four columns">
-    			<a href="http://oregonp4p.org/our-research/foster-care-hotspots/" target="_blank"><img src="images/p4p.png" alt="" /> </a>
-    		</div>
-        <div class="eight columns">
-          <p>A brief description of the project or work featured. A brief description of the project or work featured. A brief description of the project or work featured. A brief description of the project or work featured. A brief description of the project or work featured</p>
-    		</div>
-      </div>
-
-    		<div class="four columns">
-  			    <a href="work/Portland_Affordability.pdf" target="_blank"><img src="images/affordability_map.png" alt="" /> </a>
-  		  </div>
-
-    <div class="row">
-      <div class="four columns">
-  			<a href="work/Geopolitics_Ukraine.pdf" target="_blank"><img src="images/ukraine.png" alt="" /> </a>
-  		</div>
-
-      <div class="four columns">
-  			<a href="work/TPP.pdf" target="_blank"><img src="images/trade_map.png" alt="" /> </a>
-  		</div>
-
-      <div class="four columns">
-  			<a href="work/Newberg_Economic_Revitalization_Plan_Sample.pdf" target="_blank"><img src="images/newberg.png" alt="" /> </a>
-  		</div>
-    </div>
-
-    <div class="row">
-      <div class="four columns">
-        <a href="work/Hillsboro_Housing_Needs_Analysis_Sample.pdf" target="_blank"><img src="images/hillsboro.png" alt="" /> </a>
-      </div>
-    </div>
-  </div>
-</section>
+      <div id="web"><h3>Web</h3></div>
+      <div id="print"><h3>Print</h3></div>
+  </section>
 
 <!-- Add jQuery & Handlebars libraries -->
 <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>

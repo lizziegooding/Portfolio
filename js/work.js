@@ -30,9 +30,6 @@
       return (new Date(b.publishedOn)) - (new Date(a.publishedOn));
     });
 
-    // rawData.forEach(function(ele) {
-    //   Work.all.push(new Work(ele));
-    // });
     Work.all = rawData.map(function(ele) {
       return new Work(ele);
     });
