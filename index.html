@@ -13,7 +13,7 @@
   <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
   <!-- Connect CSS styles -->
-  <!-- <link rel="stylesheet" type="text/css" href="vendor/skeleton_css/skeleton.css" /> -->
+  <link rel="stylesheet" type="text/css" href="vendor/skeleton_css/skeleton.css" />
 
   <link rel="stylesheet" type="text/css" href="css/layout.css" />
   <link rel="stylesheet" type="text/css" href="css/module.css" />
@@ -35,12 +35,14 @@
 
   <!-- Create handlebars template for each featured work -->
   <script id="work-template" type="text/x-handlebars-template">
-    <article data-category="{{category}}">
-        <a href="{{workUrl}}"><h1>{{title}}</h1></a>
-        <div>
-          Published on <time pubdate datetime="2000-01-01">{{publishedOn}}</time>.
-        </div>
-      <div class="article-body">{{{body}}}</div>
+    <article class="row" category="{{category}}">
+      <div class="four columns">
+        <a href="{{workUrl}}" target="_blank"><img src="{{imgUrl}}" alt="" /></a>
+      </div>
+      <div class="eight columns">
+        <h4>{{title}}</h4>
+        {{{body}}}
+      </div>
     </article>
   </script>
 
@@ -106,16 +108,6 @@
       <div class="col">
         <div>
           <ul id="tech"><h3>Technical</h3>
-          <!-- <li class="sub-col">
-            <div>ArcGIS</div>
-            <div class="circle-container">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-          </li> -->
       </ul>
       </div>
 
@@ -132,166 +124,17 @@
         <li>Spanish</li>
       </ul>
       </div>
-
-      <!-- <div class="row">
-        <div class="two columns">QGIS</div>
-        <div class="four columns">
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <div class="circle"></div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="two columns">Mapbox</div>
-        <div class="four columns">
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <div class="circle"></div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="two columns">Adobe Illustrator</div>
-        <div class="four columns">
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <div class="circle"></div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="two columns">Adobe InDesign</div>
-        <div class="four columns">
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <div class="circle"></div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="two columns">HTML &amp; CSS</div>
-        <div class="four columns">
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <div class="circle"></div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="two columns">JavaScript</div>
-        <div class="four columns">
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <div class="circle"></div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="two columns">Python</div>
-        <div class="four columns">
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <div class="circle"></div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="two columns">SQL</div>
-        <div class="four columns">
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <div class="circle"></div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="two columns">Git</div>
-        <div class="four columns">
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <div class="circle"></div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="two columns">R</div>
-        <div class="four columns">
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <div class="circle"></div>
-        </div>
-      </div>-->
-
     </div>
   </section>
 
   <!-- Work section ------------------------------------------------->
 
-  <section id="work">
-    <div class="container"></div>
-  </section>
-
-  <!-- OLD Work section ------------------------------------------------->
-
-  <!-- <section  id="work">
+  <section  id="work">
     <div class="container">
-      Take a look at my work.
-      <div class="row">
-    		<div class="four columns">
-    			<a href="https://api.tiles.mapbox.com/v4/pba.SF_affordability/page.html?access_token=pk.eyJ1IjoicGJhIiwiYSI6Im1LUlozWjQifQ.JUBNbCxrEo-60qaKM-Z6lA#10/45.5136/-122.6664" target="_blank"><img src="images/sf_web.png" alt="" /> </a>
-    		</div>
-
-    		<div class="four columns">
-    			<a href="http://oregonp4p.org/our-research/foster-care-hotspots/" target="_blank"><img src="images/p4p.png" alt="" /> </a>
-    		</div>
-
-    		<div class="four columns">
-  			    <a href="work/Portland_Affordability.pdf" target="_blank"><img src="images/affordability_map.png" alt="" /> </a>
-  		  </div>
-  	  </div>
-
-    <div class="row">
-      <div class="four columns">
-  			<a href="work/Geopolitics_Ukraine.pdf" target="_blank"><img src="images/ukraine.png" alt="" /> </a>
-  		</div>
-
-      <div class="four columns">
-  			<a href="work/TPP.pdf" target="_blank"><img src="images/trade_map.png" alt="" /> </a>
-  		</div>
-
-      <div class="four columns">
-  			<a href="work/Newberg_Economic_Revitalization_Plan_Sample.pdf" target="_blank"><img src="images/newberg.png" alt="" /> </a>
-  		</div>
-    </div>
-
-    <div class="row">
-      <div class="four columns">
-        <a href="work/Hillsboro_Housing_Needs_Analysis_Sample.pdf" target="_blank"><img src="images/hillsboro.png" alt="" /> </a>
-      </div>
-    </div>
-  </div>
-</section> -->
+      <h1>Work</h1>
+      <div id="web"><h3>Web</h3></div>
+      <div id="print"><h3>Print</h3></div>
+  </section>
 
 <!-- Add jQuery & Handlebars libraries -->
 <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>

@@ -17,10 +17,16 @@
 
   workView.initIndexPage = function(){
     console.log('Running initIndexPage work');
-    Work.all.forEach(function(a){
-      $('#work div.container').append(a.toHtml());
+    Work.all.filter(function(obj) {
+      return (obj.category === 'web');
+    }).forEach(function(a){
+      $('#web').append(a.toHtml());
     });
-
+    Work.all.filter(function(obj) {
+      return (obj.category === 'print');
+    }).forEach(function(a){
+      $('#print').append(a.toHtml());
+    });
     workView.changeNav();
   };
   module.workView = workView;

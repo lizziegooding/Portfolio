@@ -6,6 +6,7 @@
     this.title = opts.title;
     this.category = opts.category;
     this.workUrl = opts.workUrl;
+    this.imgUrl = opts.imgUrl;
     this.publishedOn = opts.publishedOn;
     this.body = opts.body;
   }
@@ -29,9 +30,6 @@
       return (new Date(b.publishedOn)) - (new Date(a.publishedOn));
     });
 
-    // rawData.forEach(function(ele) {
-    //   Work.all.push(new Work(ele));
-    // });
     Work.all = rawData.map(function(ele) {
       return new Work(ele);
     });
