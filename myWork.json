@@ -5,7 +5,7 @@
     "workUrl":   "http://econw.github.io/PHC-map/index.html",
     "imgUrl": "images/phc.png",
     "publishedOn": "2016-06-01",
-    "body":        "<p>For the Portland Business Alliance (PBA), while working at ECONorthwest</p>"
+    "body":        "<p>The Portland Housing Center asked ECONorthwest to create a online interactive tool to assess and spread awareness of housing affordability and equitiy issues in the Portland Metro area from 1990-2020 and celebrate the organization’s 25th anniversary. I was responsible for managing the project, communicating with the client, leading meetings, sourcing and analyzing all data, and directing the design and development of the tool.</p>"
   },
   {
     "title": "Atlas of the Caucasus",
@@ -13,7 +13,7 @@
     "workUrl":   "http://mjfreem1.github.io/Caucasus-Map-Project/index.html",
     "imgUrl": "images/atlas.png",
     "publishedOn": "2016-06-20",
-    "body":        "<p>For the Portland Business Alliance (PBA), while working at ECONorthwest</p>"
+    "body":        "<p>The Atlas of the Caucasus in an educational app intended for a Western audience looking for an introduction to the historically rich and linguistically diverse region. The app was a final group project for Code Fellows' Introduction to Software Development course. My contributions included designing the linguistic and political maps using Adobe Illustrator and MapBox.js respectively, writing copy, and implementing local storage functionality.</p>"
   },
   {
     "title": "US Housing Affordability",
@@ -21,7 +21,7 @@
     "workUrl":   "http://atlas-housing-2.herokuapp.com/",
     "imgUrl": "images/US-afford.png",
     "publishedOn": "2016-07-01",
-    "body":        "<p>For the Portland Business Alliance (PBA), while working at ECONorthwest</p>"
+    "body":        "<p>US Housing Affordability is an interactive app examining nationwide housing affordability based on US Census and Zillow median home value estimates. The app allows the user to change the map based on their income, compare themselves to national averages, and change ownership assumptions to customize results. The app was a final group project for Code Fellows' Intermediate Software Development course. My contributions included gathering and analyzing Census and Zillow data, developing affordability calculations, and writing all code that served as the 'Controller' moving between the user's 'View' and the back end 'Model'.</p>"
   },
   {
     "title": "Single Family Affordability, 2014",
