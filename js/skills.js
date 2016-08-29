@@ -5,18 +5,18 @@
   }
 
   Skills.prototype.toHtml = function() {
-    this.level1 = this.level2 = this.level3 = this.level4 = this.level5 = 'black';
+    this.level1 = this.level2 = this.level3 = this.level4 = this.level5 = 'white';
     if (this.level < 5) {
-      this.level5 = 'white';
+      this.level5 = 'black';
     }
     if (this.level < 4) {
-      this.level4 = 'white';
+      this.level4 = 'black';
     }
     if (this.level < 3) {
-      this.level3 = 'white';
+      this.level3 = 'black';
     }
     if (this.level < 2) {
-      this.level2 = 'white';
+      this.level2 = 'black';
     }
     // switch(this.level) {
     // default:
