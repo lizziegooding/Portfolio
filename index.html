@@ -37,7 +37,11 @@
   <script id="work-template" type="text/x-handlebars-template">
     <article class="row" category="{{category}}">
       <div class="four columns">
-        <a href="{{workUrl}}" target="_blank"><img src="{{imgUrl}}" alt="" /></a>
+        <div class="work-img" style="background-image: url({{imgUrl}})">
+        <a href="{{workUrl}}" target="_blank">
+          <!-- <img src="{{imgUrl}}" alt="" /> -->
+        </a>
+      </div>
       </div>
       <div class="eight columns">
         <a href="{{workUrl}}" target="_blank"><h4>{{title}}</h4></a>
