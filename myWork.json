@@ -5,7 +5,7 @@
     "workUrl":   "http://econw.github.io/PHC-map/index.html",
     "imgUrl": "images/phc.png",
     "publishedOn": "2016-06-01",
-    "body":        "<p>The Portland Housing Center asked ECONorthwest to create a online interactive tool to assess and spread awareness of housing affordability and equitiy issues in the Portland Metro area from 1990-2020 and celebrate the organization’s 25th anniversary. I was responsible for managing the project, communicating with the client, leading meetings, sourcing and analyzing all data, and directing the design and development of the tool.</p>"
+    "body":        "<p>Interactive mapping tool for Portland housing affordability non-profit built while at ECONorthwest. Managed the project and budget, communicated with the client, led meetings, sourced data, built ArcPy script to automate analysis, and directed the design and development of the web tool.</p>"
   },
   {
     "title": "Atlas of the Caucasus",
@@ -13,7 +13,7 @@
     "workUrl":   "http://mjfreem1.github.io/Caucasus-Map-Project/index.html",
     "imgUrl": "images/atlas.png",
     "publishedOn": "2016-06-20",
-    "body":        "<p>The Atlas of the Caucasus in an educational app intended for a Western audience looking for an introduction to the historically rich and linguistically diverse region. The app was a final group project for Code Fellows' Introduction to Software Development course. My contributions included designing the linguistic and political maps using Adobe Illustrator and MapBox.js respectively, writing copy, and implementing local storage functionality.</p>"
+    "body":        "<p>Educational app intended to introduce Western audience to historically rich and linguistically diverse Caucasus region. As part of final group project for Code Fellows' Introduction to Software Development course, designed linguistic and political maps using Adobe Illustrator and MapBox JS respectively, wrote copy, and implemented local storage functionality.</p>"
   },
   {
     "title": "US Housing Affordability",
@@ -21,7 +21,7 @@
     "workUrl":   "http://atlas-housing-2.herokuapp.com/",
     "imgUrl": "images/US-afford.png",
     "publishedOn": "2016-07-01",
-    "body":        "<p>US Housing Affordability is an interactive app examining nationwide housing affordability based on US Census and Zillow median home value estimates. The app allows the user to change the map based on their income, compare themselves to national averages, and change ownership assumptions to customize results. The app was a final group project for Code Fellows' Intermediate Software Development course. My contributions included gathering and analyzing Census and Zillow data, developing affordability calculations, and writing all code that served as the 'Controller' moving between the user's 'View' and the back end 'Model'.</p>"
+    "body":        "<p>Policy tool examining nationwide housing affordability based on US Census and Zillow median home value estimates. App allows user to map housing affordability based on their income, compare themselves to national averages, and modify ownership assumptions to customize results. As part of final group project for Code Fellows' Intermediate Software Development course, led project, gathered and analyzed Census and Zillow data, developed affordability calculations, and wrote all Controller code communicating between View and Model.</p>"
   },
   {
     "title": "Single Family Affordability, 2014",
@@ -29,7 +29,7 @@
     "workUrl":   "https://api.tiles.mapbox.com/v4/pba.SF_affordability/page.html?access_token=pk.eyJ1IjoicGJhIiwiYSI6Im1LUlozWjQifQ.JUBNbCxrEo-60qaKM-Z6lA#10/45.5136/-122.6664",
     "imgUrl": "images/sf_web.png",
     "publishedOn": "2015-03-04",
-    "body":        "<p>For the Portland Business Alliance (PBA), while working at ECONorthwest</p>"
+    "body":        "<p>Digital map visualizing Single Family Housing Affordability in Greater Portland Area for the Portland Business Alliance while at ECONorthwest. Analyzed parcel-level data, developed visualization, and deployed using Mapbox Studio.</p>"
   },
   {
     "title":       "Foster Care Hotspots",
@@ -37,7 +37,7 @@
     "workUrl":   "http://oregonp4p.org/our-research/foster-care-hotspots/",
     "imgUrl": "images/p4p.png",
     "publishedOn": "2015-05-04",
-    "body":        "<p>For Oregon Health and Science University (OHSU), while working at ECONorthwest</p>"
+    "body":        "<p>Analyzed geographic concentrations of children entering foster care for the Oregon Health and Science University (OHSU) while at ECONorthwest. Developed almost a dozen alternate visualizations before final implementation using TileMill and MapBox JS.</p>"
   },
   {
     "title":       "The State of Gun Control after Orlando",
@@ -45,7 +45,7 @@
     "workUrl":   "images/gun-control.pdf",
     "imgUrl": "images/gun-control.png",
     "publishedOn": "2016-07-01",
-    "body":        "<p>For the Portland Housing Center (PHC), while working at ECONorthwest</p>"
+    "body":        "<p>Independent data-driven article examinining gun control following the Orlando Nightclub Shooting in June 2016. </p>"
   },
   {
     "title":       "Ethno-Linguistic groups of the Caucasus",
@@ -53,7 +53,7 @@
     "workUrl":   "images/caucasus.jpg",
     "imgUrl": "images/caucasus.jpg",
     "publishedOn": "2016-06-01",
-    "body":        "<p>For the Portland Housing Center (PHC), while working at ECONorthwest</p>"
+    "body":        "<p>Cartographic design sample created as part of the Atlas of the Caucasus project for Code Fellows.</p>"
   },
   {
     "title":       "Single Family Affordability, 2015",
@@ -61,7 +61,7 @@
     "workUrl":   "file:///Users/gooding/Code/Code%20Fellows/Portfolio/work/Portland_Affordability.pdf",
     "imgUrl": "images/affordability_map.png",
     "publishedOn": "2016-05-05",
-    "body":        "<p>For the Portland Housing Center (PHC), while working at ECONorthwest</p>"
+    "body":        "<p>Print map visualizing Single Family Housing Affordability in Greater Portland Area for ECONorthwest. Analyzed parcel-level data, developed visualization, and implemented using ArcGIS and Adobe Illustrator.</p>"
   },
   {
     "title":       "Geopolitics of Ukraine",
@@ -69,7 +69,7 @@
     "workUrl":   "file:///Users/gooding/Code/Code%20Fellows/Portfolio/work/Geopolitics_Ukraine.pdf",
     "imgUrl": "images/ukraine.png",
     "publishedOn": "2014-03-03",
-    "body":        "<p>For Cartography class, while at Middlebury College</p>"
+    "body":        "<p>Print map examining conflict between Ukraine and Russian over the territory of Crimea. Created in Cartographic Design course while at Middlebury College.</p>"
   },
   {
     "title":       "Oregon Exports to Trans-Pacific Partnership Countries",
@@ -77,7 +77,7 @@
     "workUrl":   "file:///Users/gooding/Code/Code%20Fellows/Portfolio/work/TPP.pdf",
     "imgUrl": "images/trade_map.png",
     "publishedOn": "2015-4-02",
-    "body":        "<p>For a Nike whitepaper in preparation for President Obama\"s visit in April 2015, while at ECONorthwest</p>"
+    "body":        "<p>For pro Trans-Pacific Partnership whitepaper in preparation for President Obama's visit to Nike Headquarters in April 2015, while at ECONorthwest.</p>"
   },
   {
     "title":       "Newberg America's Best Community Economic Development Plan",
@@ -85,7 +85,7 @@
     "workUrl":   "file:///Users/gooding/Code/Code%20Fellows/Portfolio/work/Newberg_Economic_Revitalization_Plan_Sample.pdf",
     "imgUrl": "images/newberg.png",
     "publishedOn": "2015-11-01",
-    "body":        "<p>For the Newberg ABC Committee in partnership with the City of Newberg and the Chehalem Valley Chamber of Commerce, while at ECONorthwest</p>"
+    "body":        "<p>Managed economic development and data visualization project for the Newberg ABC Committee in partnership with the City of Newberg and the Chehalem Valley Chamber of Commerce, while at ECONorthwest. Developed 50-page economic development strategy based on distilled stakeholder meetings, demographic data, and internal company expertise.</p>"
   },
   {
     "title":       "The City of Hillsboro Housing Needs Analysis",
@@ -93,5 +93,5 @@
     "workUrl":   "file:///Users/gooding/Code/Code%20Fellows/Portfolio/work/Hillsboro_Housing_Needs_Analysis_Sample.pdf",
     "imgUrl": "images/hillsboro.png",
     "publishedOn": "2015-06-31",
-    "body":        "<p>For the City of Hillsboro, while at ECONorthwest</p>"
+    "body":        "<p>Designed infographics and gathered demographic data for Hillsboro Housing Needs Analysis report while at ECONorthwest.</p>"
   }]
