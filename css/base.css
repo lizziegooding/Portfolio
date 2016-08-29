@@ -26,6 +26,11 @@ section {
   max-width: none;
 }
 
+img:hover {
+    opacity: 0.5;
+    filter: alpha(opacity=100); /* For IE8 and earlier */
+}
+
 section:nth-child(even) {
   background-color: rgb(77,77,77);
   color: white;
