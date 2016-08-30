@@ -3,7 +3,7 @@
 .container {
   position: relative;
   width: 100%;
-  max-width: 960px;
+  max-width: 850px;
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box;
@@ -43,6 +43,6 @@
   /*margin-left: 4%;*/
 }
 
-.four-columns {
+/*.four-columns {
   width: 30.6666666667%;
-}
+}*/

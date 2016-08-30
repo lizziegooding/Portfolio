@@ -3,24 +3,30 @@ nav {
   top: 0;
   left: 0;
 	z-index: 100;
+  margin: 3rem;
 }
 
 nav img {
   height: 4rem;
-  margin: 2rem;
+  margin-bottom: 1rem;
 }
 
 nav ul {
-  /*display: none;*/
-  padding: 0;
-  list-style: none;
+  display: none;
+  /*padding: 0;*/
+  /*list-style: none;*/
   clear: both;
+  color: black;
 }
 
-/*nav:hover ul {
+nav ul li ul {
+  margin-left: 1rem;
+}
+
+nav:hover ul {
   display: block;
-}*/
-
-nav ul li {
-	z-index: 1000;
 }
+
+/*nav ul li {
+	z-index: 1000;
+}*/
