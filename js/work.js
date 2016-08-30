@@ -13,7 +13,7 @@
   //Method toHtml for all article objs which writes data from object into cloned html fragment
   Work.prototype.toHtml = function() {
     this.daysAgo = parseInt((new Date() - new Date(this.publishedOn)) / 60 / 60 / 24 / 1000);
-    this.publishStatus = this.publishedOn ? 'published ' + this.daysAgo + ' days ago' : '(draft)';
+    // this.publishStatus = this.publishedOn ? 'published ' + this.daysAgo + ' days ago' : '(draft)';
     var template = Handlebars.compile($('#work-template').html());
     //Append horizontal line to end
     // $newWork
@@ -45,7 +45,7 @@
     } else {
       // DONE: When we don't already have the rawData in local storage, we need to get it from the JSON file, which simulates data on a remote server. Run live-server or pushstate-server! Please do NOT browse to your HTML file(s) using a "file:///" link. RUN A SERVER INSTEAD!!
       // 1. Retrieve the JSON file from the server with AJAX (which jQuery method is best for this?),
-      $.getJSON('myWork.json')
+      $.getJSON('js/myWork.json')
         .done(parseData)
         .fail(function() { console.log('Problem with work data!'); })
         .always(function() { console.log('Try to get JSON work data from server.');
@@ -58,13 +58,6 @@
         // 3. Cache the data in localStorage so next time we won't enter this "else" block (avoids hitting the server),
         localStorage.dataJSON = JSON.stringify(data);
         //Log length of works section the first time data is retreived from schedule; use reduce method
-        console.log('Length of works section: ' + Work.all
-        .map(function(obj) {
-          return obj.body.length;
-        })
-        .reduce(function(a, b){
-          return a + b;
-        }) + ' words');
         // 4. Render the index page (perhaps with an workView method?).
         workView.initIndexPage();
       };
