@@ -69,7 +69,7 @@ p {
 
 li {
 	list-style: none;
-	height: 22px;
+	/*height: 22px;*/
 }
 #about-h1 {
 	text-align: left;
@@ -77,6 +77,10 @@ li {
 	margin: 0px;
 	/*line-height: 200%;*/
 
+}
+
+#tech {
+	min-width: 282px;
 }
 
 /*.four.columns {
