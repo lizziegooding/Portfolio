@@ -34,7 +34,7 @@
       Skills.loadAll(JSON.parse(localStorage.skillsJSON));
       skillsView.initIndexPage();
     } else {
-      $.getJSON('skills-data.json')
+      $.getJSON('js/skills-data.json')
         .done(parseData)
         .fail(function() {
           console.log('Problem with skills data!'); })
