@@ -1,8 +1,7 @@
 //Funtions wrapped in an IIFE which is passed an argument of module, upon which objects can be attached for later access.
 (function(module) {
-//Create a constructor function 'Work'
+//Constructor function 'Work'
   function Work (opts) {
-    // Save all properties of `opts` into `this`.
     this.title = opts.title;
     this.category = opts.category;
     this.workUrl = opts.workUrl;
@@ -11,9 +10,8 @@
     this.body = opts.body;
   }
 
-  //Create a new method toHtml for all article objs which writes data from object into cloned html fragment
+  //Method toHtml for all article objs which writes data from object into cloned html fragment
   Work.prototype.toHtml = function() {
-    // console.log('prototype method called');
     this.daysAgo = parseInt((new Date() - new Date(this.publishedOn)) / 60 / 60 / 24 / 1000);
     this.publishStatus = this.publishedOn ? 'published ' + this.daysAgo + ' days ago' : '(draft)';
     var template = Handlebars.compile($('#work-template').html());

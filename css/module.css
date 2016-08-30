@@ -13,8 +13,6 @@ nav img {
 
 nav ul {
   display: none;
-  /*padding: 0;*/
-  /*list-style: none;*/
   clear: both;
   color: black;
 }
@@ -26,7 +24,3 @@ nav ul li ul {
 nav:hover ul {
   display: block;
 }
-
-/*nav ul li {
-	z-index: 1000;
-}*/
