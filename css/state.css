@@ -1,6 +1,6 @@
 /*For all media larger than 420px (media other than mobile)*/
 @media all and (min-width: 420px) {
-	#title {
+	#home .container h1 {
 		font-size: 500%;
 	}
 	h1 {
@@ -13,9 +13,22 @@
     font-size: 240%;
   }
   .container{
-    max-width: 960px;
+    max-width: 850px;
   }
   section{
     max-width: 100%;
   }
+}
+
+a:hover {
+	color: rgb(150,150,150);
+}
+
+nav:hover ul {
+  display: block;
+}
+
+.work-img:hover {
+    opacity: 0.5;
+    filter: alpha(opacity=100); /* For IE8 and earlier */
 }
