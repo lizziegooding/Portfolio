@@ -1,9 +1,8 @@
-// Wrap the entire contents of this file in an IIFE.
-// Pass in to the IIFE a module, upon which objects can be attached for later access.
 (function(module) {
 //Create a global object to hold all of our view methods
   var workView = {};
 
+  //Add nav bar scroll animation
   $('nav a').click(function(){
     $('html, body').animate({
       scrollTop: $($(this).attr('href')).offset().top
@@ -11,17 +10,7 @@
     return false;
   });
 
-  // workView.changeNav = function(){
-  //   console.log('Running changedNav');
-  //   //Add event listener to the nav bar, 'click'
-  //   $('nav ul li').on('click', function(){
-  //     //Hide all sections
-  //     $('section').hide();
-  //     //Fade in clicked section where data-content attribute matches section id
-  //     $('#' + $(this).attr('data-content')).fadeIn();
-  //   });
-  // };
-
+  //initiate index page
   workView.initIndexPage = function(){
     console.log('Running initIndexPage work');
     Work.all.filter(function(obj) {
@@ -34,7 +23,6 @@
     }).forEach(function(a){
       $('#print').append(a.toHtml());
     });
-    // workView.changeNav();
   };
   module.workView = workView;
 })(window);

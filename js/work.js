@@ -1,4 +1,4 @@
-//Funtions wrapped in an IIFE which is passed an argument of module, upon which objects can be attached for later access.
+//Funtions wrapped in an IIFE, passed an argument of module, upon which objects can be attached for later access.
 (function(module) {
 //Constructor function 'Work'
   function Work (opts) {
@@ -10,20 +10,16 @@
     this.body = opts.body;
   }
 
-  //Method toHtml for all article objs which writes data from object into cloned html fragment
+  //Method toHtml writes data from object into cloned html fragment
   Work.prototype.toHtml = function() {
-    this.daysAgo = parseInt((new Date() - new Date(this.publishedOn)) / 60 / 60 / 24 / 1000);
-    // this.publishStatus = this.publishedOn ? 'published ' + this.daysAgo + ' days ago' : '(draft)';
     var template = Handlebars.compile($('#work-template').html());
-    //Append horizontal line to end
-    // $newWork
     //Return our modified cloned DOM fragment
     return template(this);
   };
 
-  // DONE: This function will take the rawData, how ever it is provided, and use it to instantiate all the articles.
+  //Take rawData and instantiate all <article>s
   Work.loadAll = function(rawData) {
-    //Sort by date, youngest to oldest
+    //Sort by date, newest to oldest
     rawData.sort(function(a,b) {
       return (new Date(b.publishedOn)) - (new Date(a.publishedOn));
     });
@@ -33,19 +29,19 @@
     });
   };
 
-  // This function will retrieve the data from either a local or remote source, and process it, then hand off control to the View.
+  // Retrieve data from local or remote source, process it, and hand off control to the View
   Work.fetchAll = function() {
-    if (localStorage.dataJSON) {
-      // When rawData is already in localStorage, we can load it by calling the .loadAll function, and then render the index page (using the proper method on the workView object).
-      console.log('Retrieved work from localStorage: ', JSON.parse(localStorage.dataJSON));
-      //DONE: What do we pass in here to the .loadAll function?
-      Work.loadAll(JSON.parse(localStorage.dataJSON));
-      //DONE: Change this fake method call to the correct one that will render the index page.
+    if (localStorage.workJSON) {
+      // When rawData is already in localStorage, load it by calling the .loadAll function, then render the index page
+      console.log('Retrieved work from localStorage: ', JSON.parse(localStorage.workJSON));
+      //Pass to .loadAll the parsed data in local storage
+      Work.loadAll(JSON.parse(localStorage.workJSON));
+      //Render the index page
       workView.initIndexPage();
     } else {
-      // DONE: When we don't already have the rawData in local storage, we need to get it from the JSON file, which simulates data on a remote server. Run live-server or pushstate-server! Please do NOT browse to your HTML file(s) using a "file:///" link. RUN A SERVER INSTEAD!!
-      // 1. Retrieve the JSON file from the server with AJAX (which jQuery method is best for this?),
-      $.getJSON('js/myWork.json')
+      //When we don't already have the data in local storage, get it from the JSON file, simulating retrieving data on a remote server.
+      // Retrieve the JSON file from the server with AJAX
+      $.getJSON('js/work-data.json')
         .done(parseData)
         .fail(function() { console.log('Problem with work data!'); })
         .always(function() { console.log('Try to get JSON work data from server.');
@@ -53,12 +49,11 @@
 
       function parseData(data){
         console.log('From AJAX, work: ', data);
-        // 2. Store the resulting JSON data with the .loadAll method,
+        //Store the resulting JSON data with the .loadAll method
         Work.loadAll(data);
-        // 3. Cache the data in localStorage so next time we won't enter this "else" block (avoids hitting the server),
-        localStorage.dataJSON = JSON.stringify(data);
-        //Log length of works section the first time data is retreived from schedule; use reduce method
-        // 4. Render the index page (perhaps with an workView method?).
+        //Cache the data in localStorage
+        localStorage.workJSON = JSON.stringify(data);
+        //Render the index page
         workView.initIndexPage();
       };
     }
