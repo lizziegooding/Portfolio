@@ -18,22 +18,6 @@
     if (this.level < 2) {
       this.level2 = 'black';
     }
-    // switch(this.level) {
-    // default:
-    //   this.level1 = this.level2 = this.level3 = this.level4 = this.level5 = 'black';
-    // case 4:
-    //   this.level5 = 'white';
-    //   break;
-    // case 3:
-    //   this.level4 = this.level5 = 'white';
-    //   break;
-    // case 2:
-    //   this.level5 = this.level4 = this.level3 = 'white';
-    //   break;
-    // case 1:
-    //   this.level5 = this.level4 = this.level3 = this.level2 = 'white';
-    //   break;
-    // }
     var template = Handlebars.compile($('#skills-template').html());
     return template(this);
   };

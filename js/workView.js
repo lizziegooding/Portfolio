@@ -4,6 +4,13 @@
 //Create a global object to hold all of our view methods
   var workView = {};
 
+  $('nav a').click(function(){
+    $('html, body').animate({
+      scrollTop: $($(this).attr('href')).offset().top
+    }, 750);
+    return false;
+  });
+
   // workView.changeNav = function(){
   //   console.log('Running changedNav');
   //   //Add event listener to the nav bar, 'click'
