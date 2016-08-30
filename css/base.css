@@ -20,7 +20,7 @@ body {
 section {
   height: 100vh;
   width: 100%;
-  padding: 7%;
+	padding: 10.5%;
   display: table;
   margin: 0;
   max-width: none;
@@ -53,7 +53,7 @@ h1, h2, h3 {
 }
 
 h1 {
-	font-size: 3em;
+	font-size: 5rem;
 }
 
 a, a:link, a:active {
@@ -74,14 +74,14 @@ li {
 #about-h1 {
 	text-align: left;
 	/*max-width: 100%;*/
-	margin: 0px;
+	margin: 0;
 	/*line-height: 200%;*/
 
 }
 
-#tech {
+/*#tech {
 	min-width: 282px;
-}
+}*/
 
 /*.four.columns {
 
