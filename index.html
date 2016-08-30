@@ -9,8 +9,8 @@
   <meta name="viewport" content="width=device-width initial-scale=1">
 
   <!-- Connect to Adobe Typekit fonts -->
-  <script src="https://use.typekit.net/uxn6xyu.js"></script>
-  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+  <!-- <script src="https://use.typekit.net/uxn6xyu.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script> -->
 
   <!-- Connect CSS styles -->
   <link rel="stylesheet" type="text/css" href="vendor/skeleton_css/skeleton.css" />
@@ -38,13 +38,11 @@
     <article class="row" category="{{category}}">
       <div class="four columns">
         <div class="work-img" style="background-image: url({{imgUrl}})">
-        <a href="{{workUrl}}" target="_blank">
-          <!-- <img src="{{imgUrl}}" alt="" /> -->
-        </a>
-      </div>
+        <a href="{{workUrl}}" target="_blank"></a>
+        </div>
       </div>
       <div class="eight columns">
-        <a href="{{workUrl}}" target="_blank"><h4>{{title}}</h4></a>
+        <h4><a href="{{workUrl}}" target="_blank">{{title}}</a></h4>
         {{{body}}}
       </div>
     </article>
@@ -60,15 +58,16 @@
     <!-- Nav Bar------------------------------------------------->
     <nav>
         <!-- temporary 'hamburger' menu icon, will eventually be replaced -->
-        <img src="images/threelines.png">
+        <img src="images/favicon.png">
         <ul>
-          <li data-content="welcome">{ welcome }</li>
-          <li data-content="about">{ about }</li>
-          <li data-content="skills">{ skills &amp;<br>experience }</li>
-          <li data-content="work">{ work }
-            <li>- code</li>
-            <li>- design</li>
-            <li>- maps</li>
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#skills">SKILLS</a></li>
+          <li><a href="#work">WORK</a>
+            <ul>
+              <li><a href="#web">WEB</a></li>
+              <li><a href="#print">PRINT</a></li>
+            </ul>
         </li>
         </ul>
     </nav>
@@ -76,7 +75,7 @@
 
   <!-- Welcome section ------------------------------------------------->
 
-  <section id="welcome">
+  <section id="home">
     <div class="container">
       <h1 id="title">Lizzie Gooding</h1>
       <div class="row">
@@ -93,8 +92,9 @@
   <section id="about">
     <div class="container">
       <div class="row">
-          <div id="about-img"></div>
-          <div class="column">
+          <div class="four columns">
+          <div id="about-img"></div></div>
+          <div class="eight columns">
             <h1 id="about-h1">About</h1>
           <p>
           I’m a spatially-minded developer seeking a career at the intersection of data visualization and programming. I am both a generalist, highly skilled in writing, speaking, and visualizing data, and a specialist with deep expertise in spatial problem solving and cartography. My qualitative skills complement and enhance a strong quantitative background that includes training in computer science, math, and spatial analysis. In the future, I am looking to combine data analysis, graphic design, and effective storytelling to create striking digital products.
@@ -104,31 +104,32 @@
   </div>
   </section>
 
-  <!-- Skills/Experience section ------------------------------------------------->
+  <!-- Skills section ------------------------------------------------->
 
   <section id="skills">
     <div class="container">
       <h1 id="about-h1">Skills</h1>
-      <div class="col">
-        <div>
-          <ul id="tech"><h3>Technical</h3>
-      </ul>
-      </div>
-
-      <ul><h3>Qualitative</h3>
-        <li>Project Management</li>
-        <li>Research</li>
-        <li>Data Analysis</li>
-        <li>Geographic Visualization</li>
-        <li>Graphic Design</li>
-        <li>Oral and Written Communication</li>
-        <li>Problem Solving</li>
-        <li>Teaching</li>
-        <li>Consulting</li>
-        <li>Spanish</li>
-      </ul>
+      <div class="row">
+        <div class="six columns">
+          <!-- <div> -->
+            <ul id="tech"><h3>Technical</h3></ul>
+        </div>
+        <div class="six columns">
+        <ul><h3>Qualitative</h3>
+          <li>Project Management</li>
+          <li>Research</li>
+          <li>Data Analysis</li>
+          <li>Geographic Visualization</li>
+          <li>Graphic Design</li>
+          <li>Oral and Written Communication</li>
+          <li>Problem Solving</li>
+          <li>Teaching</li>
+          <li>Consulting</li>
+          <li>Spanish</li>
+        </ul>
       </div>
     </div>
+  </div>
   </section>
 
   <!-- Work section ------------------------------------------------->
@@ -142,13 +143,13 @@
 
   <!-- Footer ------------------------------------------------->
   <footer>
-      <div class="container">
-        <div class="col">
+      <!-- <div class="container"> -->
+        <div class="row">
           <!-- <div class="twelve.columns"> -->
             <div id="copyright">&copy; 2016 Lizzie Gooding, All Rights Reserved  |  The content of this website may not be reproduced or distributed without the author's written consent.</div>
           </div>
         <!-- </div> -->
-      </div>
+      <!-- </div> -->
     </footer>
 
 <!-- Add jQuery & Handlebars libraries -->

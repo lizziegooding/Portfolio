@@ -42,14 +42,14 @@
   box-sizing: border-box; }
 
 /* For devices larger than 400px */
-@media (min-width: 400px) {
+/*@media (min-width: 550px) {
   .container {
     width: 85%;
     padding: 0; }
-}
+}*/
 
 /* For devices larger than 550px */
-@media (min-width: 550px) {
+@media (min-width: 820px) {
   .container {
     width: 80%; }
   .column,
@@ -63,7 +63,7 @@
   .one.columns                    { width: 4.66666666667%; }
   .two.columns                    { width: 13.3333333333%; }
   .three.columns                  { width: 22%;            }
-  .four.columns                   { width: 30.6666666667%; }
+  .four.columns                   { width: 30.6666666667%; min-width: 20rem;}
   .five.columns                   { width: 39.3333333333%; }
   .six.columns                    { width: 48%;            }
   .seven.columns                  { width: 56.6666666667%; }
@@ -131,7 +131,7 @@ body {
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 h1, h2, h3, h4, h5, h6 {
-  margin-top: 0;
+  margin-top: 2rem;
   margin-bottom: 2rem;
   font-weight: 300; }
 h1 { font-size: 4.0rem; line-height: 1.2;  letter-spacing: -.1rem;}
@@ -384,7 +384,7 @@ hr {
 
 /* Self Clearing Goodness */
 .container:after,
-.row:after,
+/*.row:after,*/
 .u-cf {
   content: "";
   display: table;

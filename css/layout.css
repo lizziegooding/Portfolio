@@ -3,7 +3,7 @@
 .container {
   position: relative;
   width: 100%;
-  max-width: 960px;
+  max-width: 850px;
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box;
@@ -14,8 +14,20 @@
 .row {
   display: flex;
   justify-content: space-around;
+  flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
+}
+
+#skills .container .row {
+  /*align-items: center;
+  justify-content: space-around;*/
+  /*width: 100%;*/
+  width:100%;
+  /*display: flex;*/
+  /*flex-wrap: wrap;*/
+  justify-content: space-around;
+  align-items: flex-start;
 }
 
 .col {
@@ -28,7 +40,7 @@
 
 .sub-col {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
   align-items: center;
   /*max-width: 50%;*/
@@ -43,6 +55,6 @@
   /*margin-left: 4%;*/
 }
 
-.four-columns {
+/*.four-columns {
   width: 30.6666666667%;
-}
+}*/
