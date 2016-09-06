@@ -29,12 +29,13 @@ li {
 	list-style: none;
 }
 
-section:nth-child(even) {
+/*Use nth of type rather than nth child to optimize for Safari & Chrome*/
+section:nth-of-type(odd){
   background-color: rgb(51,51,51);
   color: white;
 }
 
-section:nth-child(odd) {
+section:nth-of-type(even) {
   background-color: white;
   color: rgb(51,51,51);
 }
