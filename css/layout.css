@@ -45,3 +45,7 @@ footer {
   justify-content: space-around;
   align-items: flex-start;
 }
+
+#about .container .row {
+  align-items: flex-start;
+}
