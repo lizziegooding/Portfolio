@@ -58,7 +58,7 @@
   {
     "title":       "Single Family Affordability, 2015",
     "category":    "print",
-    "workUrl":   "work/Portland_Affordability.pdf",
+    "workUrl":   "work/pdx_afford.pdf",
     "imgUrl": "images/affordability_map.png",
     "publishedOn": "2016-05-05",
     "body":        "<p>Print map visualizing Single Family Housing Affordability in Greater Portland Area for ECONorthwest. Analyzed parcel-level data, developed visualization, and implemented using ArcGIS and Adobe Illustrator.</p>"
