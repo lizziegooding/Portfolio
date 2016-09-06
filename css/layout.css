@@ -10,10 +10,11 @@ section {
 footer {
 	background-color: rgb(77,77,77);
 	width: 100%;
+  height: auto;
   color: #c8c8c8;
   background-color: #505150;
   text-align: center;
-  padding: 2rem 0rem;
+  padding: 3%;
 }
 
 .container {
@@ -43,5 +44,9 @@ footer {
 
 #skills .container .row {
   justify-content: space-around;
+  align-items: flex-start;
+}
+
+#about .container .row {
   align-items: flex-start;
 }
