@@ -52,9 +52,10 @@
   <script id="work-template" type="text/x-handlebars-template">
     <article class="row" category="{{category}}">
       <div class="four columns">
-        <div class="work-img" style="background-image: url({{imgUrl}})">
-          <a href="{{workUrl}}" target="_blank"></a>
+        <a href="{{workUrl}}" target="_blank">
+          <div class="work-img" style="background-image: url({{imgUrl}})">
         </div>
+        </a>
       </div>
       <div class="eight columns">
         <h4><a href="{{workUrl}}" target="_blank">{{title}}</a></h4>
