@@ -9,12 +9,15 @@
   <meta name="viewport" content="width=device-width initial-scale=1">
 
   <!-- Connect CSS styles -->
+  <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+
   <link rel="stylesheet" type="text/css" href="vendor/skeleton_css/skeleton.css" />
 
-  <link rel="stylesheet" type="text/css" href="css/layout.css" />
-  <link rel="stylesheet" type="text/css" href="css/module.css" />
-  <link rel="stylesheet" type="text/css" href="css/state.css" />
+  <!-- <link rel="stylesheet" type="text/css" href="css/layout.css" />
+  <link rel="stylesheet" type="text/css" href="css/module.css" /> -->
   <link rel="stylesheet" type="text/css" href="css/base.css" />
+  <!-- <link rel="stylesheet" type="text/css" href="css/state.css" /> -->
+
 
   <!-- Connect Favicon icon -->
   <link rel="apple-touch-icon" sizes="57x57" href="images/favicon.ico/apple-icon-57x57.png">
@@ -34,18 +37,19 @@
   <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
 
-<script id="skills-template" type="text/x-handlebars-template">
-  <li class="sub-col">
-    <div>{{skill}}</div>
-    <div>
-      <div class="{{level1}}"></div>
-      <div class="{{level2}}"></div>
-      <div class="{{level3}}"></div>
-      <div class="{{level4}}"></div>
-      <div class="{{level5}}"></div>
-    </div>
-  </li>
-</script>
+  <!-- Create handlebars template for each featured skill -->
+  <script id="skills-template" type="text/x-handlebars-template">
+    <li class="sub-col">
+      <div>{{skill}}</div>
+      <div>
+        <div class="{{level1}}"></div>
+        <div class="{{level2}}"></div>
+        <div class="{{level3}}"></div>
+        <div class="{{level4}}"></div>
+        <div class="{{level5}}"></div>
+      </div>
+    </li>
+  </script>
 
   <!-- Create handlebars template for each featured work -->
   <script id="work-template" type="text/x-handlebars-template">
@@ -73,18 +77,16 @@
     <!-- Nav Bar------------------------------------------------->
     <nav>
         <img src="images/favicon.png">
-        <ul>
-          <li><a href="#home">HOME</a></li>
-          <li><a href="#about">ABOUT</a></li>
-          <li><a href="#skills">SKILLS</a></li>
-          <li><a href="#work">WORK</a>
-            <ul>
-              <li><a href="#web">WEB</a></li>
-              <li><a href="#print">PRINT</a></li>
-            </ul>
-        </li>
-        </ul>
     </nav>
+    <div id="overlay">
+    <ul>
+      <li><a href="#home">HOME</a></li>
+      <li><a href="#about">ABOUT</a></li>
+      <li><a href="#skills">SKILLS</a></li>
+      <li><a href="#work">WORK</a></li>
+    </ul>
+  </div>
+
   </header>
 
   <!-- Home section ------------------------------------------------->
@@ -165,6 +167,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
 
 <!-- Add local js files -->
+<script type="text/javascript" src="js/nav.js"></script>
+
 <script type="text/javascript" src="js/skills.js"></script>
 <script type="text/javascript" src="js/skillsView.js"></script>
 

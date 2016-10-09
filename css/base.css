@@ -1,15 +1,15 @@
+/* =================================
+  Base Element Styles
+==================================== */
+
 * {
-	font-family: "Avenir Next", Helvetica, sans-serif;
   box-sizing: border-box;
-	text-align: left;
 }
 
 body {
+	font-family: "Avenir Next", Helvetica, sans-serif;
   margin: 0;
-}
-
-h1, h2, h3 {
-	font-family: "proxima-nova", "Avenir", Helvetica, "sans-serif";
+	line-height: 1.8;
 }
 
 h1 {
@@ -21,21 +21,203 @@ a, a:link, a:active {
   color: inherit;
 }
 
-p {
-	line-height: 200%;
-}
-
 li {
 	list-style: none;
+	font-size: 110%;
 }
 
-/*Use nth of type rather than nth child to optimize for Safari & Chrome*/
-section:nth-of-type(odd){
-  background-color: rgb(51,51,51);
-  color: white;
+#home {
+	background: white url('../images/background.jpg') no-repeat 50% 0%/cover;
+	text-align: center;
+	color:  white;
 }
 
-section:nth-of-type(even) {
-  background-color: white;
-  color: rgb(51,51,51);
+#about {
+	background-color: rgba(180, 188, 177, 1); /*green tea green*/
+	color: rgba(23, 31, 44, 1); /*almost black*/
+}
+
+#skills {
+	background-color: rgba(23, 31, 44, 0.8); /*almost black*/
+	color: white;
+}
+
+#work {
+	background-color:  rgba(206, 200, 187, 0.2); /*off white*/
+	color: rgba(23, 31, 44, 1); /*almost black*/
+}
+
+.work-img {
+	position: relative;
+  float: left;
+  width:  100%;
+  height: 220px;
+	margin: 10px auto;
+	background: no-repeat 0% 0%/cover;
+}
+
+.sub-col > div {
+	display: inline-block;
+	height: 22.73px;
+	width: 140px;
+}
+
+.dot {
+	height: 15px;
+	width: 15px;
+	margin: 3px;
+	display: inline-block;
+	border-radius: 15px;
+}
+
+.black {
+	background-color: rgba(23, 31, 44, 0.4);
+}
+
+.white {
+	background-color: white;
+}
+
+a:hover {
+	color: rgba(23, 31, 44, 0.5);
+}
+
+.work-img:hover {
+    opacity: 0.5;
+    filter: alpha(opacity=100); /* For IE8 and earlier */
+}
+
+
+/* =================================
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+	z-index: 10000;
+  margin: 1rem;
+}
+
+nav img {
+  height: 3.5rem;
+}
+
+#overlay {
+	background-color: rgba(20, 20, 20, 0.9);
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	display: none;
+	z-index: 1000;
+}
+
+#overlay ul {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100%;
+}
+
+#overlay ul li {
+	font-size: 4rem;
+	text-align: center;
+	color: white;
+	line-height: 2.75;
+}
+
+#overlay a {
+	width: 100%;
+	display: inline-block;
+}
+
+#overlay a:hover {
+	color: rgba(255, 255, 255, 0.5);
+}
+
+
+/* ---- Layout Containers ---- */
+section {
+  height: 100vh;
+  width: 100%;
+	padding: 7% 7% 7% 12%;
+  display: table;
+  margin: 0;
+
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.sub-col {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+footer {
+	width: 100%;
+	color: rgba(23, 31, 44, 0.8); /*almost black*/
+  text-align: center;
+  padding: 3%;
+	background-color: rgb(120, 120, 120);
+}
+
+
+#skills .container .row, #about .container .row  {
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+
+/*For all media larger than 769px (media other than mobile)*/
+@media (min-width: 769px) {
+
+	h1 {
+    font-size: 400%;
+  }
+	h2 {
+    font-size: 320%;
+  }
+	h3 {
+    font-size: 240%;
+  }
+
+	#home .container h1 {
+		font-size: 500%;
+	}
+
+  .container{
+    max-width: 850px;
+  }
+
+	#overlay ul li a {
+		font-size: 120%;
+	}
+
+	nav {
+		padding: 2rem;
+	}
+	nav img {
+		height: 5rem;
+	}
+
 }
