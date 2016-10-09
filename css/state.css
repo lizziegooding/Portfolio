@@ -25,9 +25,9 @@ a:hover {
 	color: rgb(150,150,150);
 }
 
-nav:hover ul {
+/*nav:hover ul {
   display: block;
-}
+}*/
 
 .work-img:hover {
     opacity: 0.5;

@@ -2,7 +2,7 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
-	z-index: 100;
+	z-index: 10000;
   margin: 2rem;
 }
 
@@ -11,15 +11,15 @@ nav img {
   margin-bottom: 1rem;
 }
 
-nav ul {
+/*nav ul {
   display: none;
   clear: both;
   color: black;
-}
+}*/
 
-nav ul li ul {
+/*nav ul li ul {
   margin-left: 1rem;
-}
+}*/
 
 /*TODO: review Treehouse background image properties*/
 .work-img {

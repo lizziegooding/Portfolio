@@ -9,6 +9,8 @@
   <meta name="viewport" content="width=device-width initial-scale=1">
 
   <!-- Connect CSS styles -->
+  <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+
   <link rel="stylesheet" type="text/css" href="vendor/skeleton_css/skeleton.css" />
 
   <link rel="stylesheet" type="text/css" href="css/layout.css" />
@@ -74,18 +76,16 @@
     <!-- Nav Bar------------------------------------------------->
     <nav>
         <img src="images/favicon.png">
-        <ul>
-          <li><a href="#home">HOME</a></li>
-          <li><a href="#about">ABOUT</a></li>
-          <li><a href="#skills">SKILLS</a></li>
-          <li><a href="#work">WORK</a>
-            <!-- <ul>
-              <li><a href="#web">WEB</a></li>
-              <li><a href="#print">PRINT</a></li>
-            </ul> -->
-        </li>
-        </ul>
     </nav>
+    <div id="overlay">
+    <ul>
+      <li><a href="#home">HOME</a></li>
+      <li><a href="#about">ABOUT</a></li>
+      <li><a href="#skills">SKILLS</a></li>
+      <li><a href="#work">WORK</a></li>
+    </ul>
+  </div>
+
   </header>
 
   <!-- Home section ------------------------------------------------->
@@ -166,6 +166,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
 
 <!-- Add local js files -->
+<script type="text/javascript" src="js/nav.js"></script>
+
 <script type="text/javascript" src="js/skills.js"></script>
 <script type="text/javascript" src="js/skillsView.js"></script>
 
