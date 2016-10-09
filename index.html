@@ -34,18 +34,19 @@
   <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
 
-<script id="skills-template" type="text/x-handlebars-template">
-  <li class="sub-col">
-    <div>{{skill}}</div>
-    <div>
-      <div class="{{level1}}"></div>
-      <div class="{{level2}}"></div>
-      <div class="{{level3}}"></div>
-      <div class="{{level4}}"></div>
-      <div class="{{level5}}"></div>
-    </div>
-  </li>
-</script>
+  <!-- Create handlebars template for each featured skill -->
+  <script id="skills-template" type="text/x-handlebars-template">
+    <li class="sub-col">
+      <div>{{skill}}</div>
+      <div>
+        <div class="{{level1}}"></div>
+        <div class="{{level2}}"></div>
+        <div class="{{level3}}"></div>
+        <div class="{{level4}}"></div>
+        <div class="{{level5}}"></div>
+      </div>
+    </li>
+  </script>
 
   <!-- Create handlebars template for each featured work -->
   <script id="work-template" type="text/x-handlebars-template">
@@ -78,10 +79,10 @@
           <li><a href="#about">ABOUT</a></li>
           <li><a href="#skills">SKILLS</a></li>
           <li><a href="#work">WORK</a>
-            <ul>
+            <!-- <ul>
               <li><a href="#web">WEB</a></li>
               <li><a href="#print">PRINT</a></li>
-            </ul>
+            </ul> -->
         </li>
         </ul>
     </nav>

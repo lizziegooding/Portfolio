@@ -1,4 +1,5 @@
 /*For all media larger than 420px (media other than mobile)*/
+/*TODO: increase screen width minimums, change font to rems or ems, test on mobile with Chro developer tools*/
 @media all and (min-width: 420px) {
 	#home .container h1 {
 		font-size: 500%;

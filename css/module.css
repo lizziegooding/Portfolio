@@ -3,7 +3,7 @@ nav {
   top: 0;
   left: 0;
 	z-index: 100;
-  margin: 1%;
+  margin: 2rem;
 }
 
 nav img {
@@ -21,6 +21,7 @@ nav ul li ul {
   margin-left: 1rem;
 }
 
+/*TODO: review Treehouse background image properties*/
 .work-img {
 	position: relative;
   float: left;
@@ -33,6 +34,7 @@ nav ul li ul {
   background-size: cover;
 }
 
+/*TODO: create a third class, .dot to contain properties both .white and .black share*/
 .black {
 	height: 15px;
 	width: 15px;
@@ -41,6 +43,7 @@ nav ul li ul {
 	margin: 3px;
 	display: inline-block;
 }
+
 .white {
 	height: 15px;
 	width: 15px;
