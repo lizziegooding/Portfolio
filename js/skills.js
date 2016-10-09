@@ -5,18 +5,18 @@
   }
 
   Skills.prototype.toHtml = function() {
-    this.level1 = this.level2 = this.level3 = this.level4 = this.level5 = 'white';
+    this.level1 = this.level2 = this.level3 = this.level4 = this.level5 = 'white dot';
     if (this.level < 5) {
-      this.level5 = 'black';
+      this.level5 = 'black dot';
     }
     if (this.level < 4) {
-      this.level4 = 'black';
+      this.level4 = 'black dot';
     }
     if (this.level < 3) {
-      this.level3 = 'black';
+      this.level3 = 'black dot';
     }
     if (this.level < 2) {
-      this.level2 = 'black';
+      this.level2 = 'black dot';
     }
     var template = Handlebars.compile($('#skills-template').html());
     return template(this);
