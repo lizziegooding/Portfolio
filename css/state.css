@@ -19,15 +19,19 @@
   section{
     max-width: 100%;
   }
+	#overlay ul li a {
+		font-size: 200%;
+	}
+
 }
 
 a:hover {
 	color: rgb(150,150,150);
 }
 
-/*nav:hover ul {
-  display: block;
-}*/
+#overlay a:hover {
+	background-color: white;
+}
 
 .work-img:hover {
     opacity: 0.5;
