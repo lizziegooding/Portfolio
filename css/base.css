@@ -4,8 +4,6 @@
 
 * {
   box-sizing: border-box;
-  /*border: solid 1px white;*/
-
 }
 
 body {
@@ -42,9 +40,6 @@ section:nth-child(2n){
 
 
 #home {
-	/*background: black url('../images/background.jpg') no-repeat 50% 0%/cover;*/
-  /*color:  white;
-  background-color: black;*/
   position: relative;
 }
 
@@ -225,7 +220,6 @@ nav {
   top: 29px;
 }
 
-
 #overlay {
 	background-color: rgba(10,18,20, 0.9);
 	position: fixed;
@@ -323,10 +317,6 @@ footer {
   }
 
   #home .home-box {
-    /*justify-content: space-around;*/
-    /*border: none;
-    display: flex;*/
-    /*margin-top: 30%;*/
     margin-bottom: 7%;
     margin-right: 7%;
   }
@@ -340,11 +330,10 @@ footer {
     height: 45px;
     margin: 50px;
   }
+  
   #nav-icon2 span {
   height: 9px;
-}
-
-
+  }
 
   #home ul li {
     /*text-align: left;*/
@@ -357,12 +346,5 @@ footer {
 	#overlay ul li a {
 		font-size: 120%;
 	}
-
-	/*nav {
-		padding: 2rem;
-	}
-	nav img {
-		height: 5rem;
-	}*/
 
 }
