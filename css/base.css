@@ -7,9 +7,17 @@
 }
 
 body {
-	font-family: "Avenir Next", Helvetica, sans-serif;
   margin: 0;
 	line-height: 1.8;
+}
+
+h1, h2, h3 {
+  font-family: "GillSans-Light", "Gill Sans", "Avenir Next";
+  letter-spacing: 0.1rem;
+}
+
+p, div, h4 {
+  font-family: "Avenir Next", Helvetica, sans-serif;
 }
 
 h1 {
@@ -88,7 +96,7 @@ section:nth-child(2n){
 }
 
 .black {
-	background-color: rgba(23, 31, 44, 0.4);
+	background-color: rgb(30, 30, 30);
 }
 
 .white {
@@ -96,7 +104,7 @@ section:nth-child(2n){
 }
 
 a:hover {
-	color: rgba(23, 31, 44, 0.5);
+	color: rgb(70, 70, 70);
 }
 
 .work-img:hover {
@@ -238,6 +246,7 @@ nav {
 
 #overlay ul li {
 	font-size: 4rem;
+  font-family: "GillSans-Light", "Gill Sans", "Avenir Next";
 	text-align: center;
 	color: white;
 	line-height: 2.75;
@@ -330,7 +339,7 @@ footer {
     height: 45px;
     margin: 50px;
   }
-  
+
   #nav-icon2 span {
   height: 9px;
   }
