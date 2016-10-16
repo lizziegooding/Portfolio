@@ -11,12 +11,12 @@ body {
 	line-height: 1.8;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   font-family: "GillSans-Light", "Gill Sans", "Avenir Next";
   letter-spacing: 0.1rem;
 }
 
-p, div, h4 {
+p, div {
   font-family: "Avenir Next", Helvetica, sans-serif;
 }
 
@@ -298,7 +298,6 @@ section {
 
 footer {
 	width: 100%;
-	/*color: rgba(23, 31, 44, 0.8); /*almost black*/*/
   text-align: center;
   padding: 3%;
 	color: rgb(120, 120, 120);
@@ -345,7 +344,6 @@ footer {
   }
 
   #home ul li {
-    /*text-align: left;*/
     font-size: 180%;
     display: inline-block;
     padding-right: 20px;
