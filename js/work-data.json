@@ -94,4 +94,21 @@
     "imgUrl": "images/hillsboro.png",
     "publishedOn": "2015-06-31",
     "body":        "<p>Designed infographics and gathered demographic data for Hillsboro Housing Needs Analysis report while at ECONorthwest.</p>"
-  }]
+  },
+  {
+    "title":       "How to Request a Map",
+    "category":    "print",
+    "workUrl":   "work/How-to-request-a-map.pdf",
+    "imgUrl": "images/so-you-want-a-map.jpg",
+    "publishedOn": "2016-03-01",
+    "body":        "<p>Presentation given at ECONorthwest advising Project Managers and Directors on best practices for incorporating spatial analysis and maps into their projects.</p>"
+  },
+  {
+    "title":       "Applications of Google Maps Engine Pro",
+    "category":    "web",
+    "workUrl":   "https://www.youtube.com/watch?v=I7_xPh_wHxE&list=PLf37Qp0yVzhcxBELfrwpzsuUwDuwtT0Tw",
+    "imgUrl": "images/gmep.png",
+    "publishedOn": "2014-04-01",
+    "body":        "<p>Video tutorials created during senior seminar at Middlebury College, Teaching and Innovation in GIS. Incorporated multi-media, evidence-based learning principles to teach students fundamental geographic concepts by building simple interactive online maps.</p>"
+  }
+]
